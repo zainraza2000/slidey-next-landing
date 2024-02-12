@@ -2,32 +2,363 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Givonic", sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@font-face {
+  font-family: "Givonic";
+  src: url("../assets/Givonic-Font/Givonic\ Variable.otf"),
+    url("../assets/Givonic-Font/Givonic\ Variable.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Antapani";
+  src: url("../assets/font-antapani/Antapani-Regular.ttf"),
+    url("../assets/font-antapani/Antapani-Thin.ttf"),
+    url("../assets/font-antapani/Antapani-Light.ttf"),
+    url("../assets/font-antapani/Antapani-Regular.woff"),
+    url("../assets/font-antapani/Antapani-Regular.eot"),
+    url("../assets/font-antapani/Antapani-Medium.ttf"),
+    url("../assets/font-antapani/Antapani-SemiBold.ttf"),
+    url("../assets/font-antapani/Antapani-Bold.ttf"), format("truetype");
+}
+
+.fontGivonic {
+  font-family: "Givonic", sans-serif;
+}
+
+.fontAntapani {
+  font-family: "Antapani", sans-serif;
+}
+
+.bg-frame {
+  background-image: url("../assets/images/bg-frame.png");
+  background-size: contain; /* Cover the entire div with the background image */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+.bg-Vector {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/Vector.png");
+  background-size: contain; /* Cover the entire div with the background image */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+.spinning-div {
+  animation: spin 10s linear infinite; /* adjust the duration and timing function as needed */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.transition-effect {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hoverScaleEffect:hover {
+}
+
+/* -------------------------------------- IDEA SECTION ----------------------------------- */
+
+.bg-idea {
+  /* width: 100%; */
+  /* height: 100%; */
+  background-image: url("../assets/images/ideasection.png");
+  background-size: contain; /* Cover the entire div with the background image */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+.container-div {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+}
+
+.item {
+  /* position: absolute; */
+  width: 150px;
+  height: 60px;
+  color: white;
+  background: black;
+  border-radius: inherit;
+}
+
+/* -------------------------------------- client SECTION ----------------------------------- */
+
+.clientCard-boxShadow {
+  box-shadow: 2px 18px 21.9px 0px rgba(160, 231, 255, 0.25);
+}
+
+/* -------------------------------------- Ranking SECTION ----------------------------------- */
+
+.bg-ranking-1 {
+  background-image: url("../assets/images/ranking1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-ranking-2 {
+  background-image: url("../assets/images/ranking2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-ranking-3 {
+  background-image: url("../assets/images/ranking3.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* -------------------------------------- Proven SECTION ----------------------------------- */
+.slick-track {
+  display: flex !important;
+  align-items: center !important;
+  /* margin-left: 50px !important; */
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -50px !important;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 40px !important;
+  height: 8px !important;
+  margin: 10px 5px 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px !important;
+  height: 8px !important;
+  content: "" !important;
+  text-align: center;
+  opacity: 1 !important;
+  color: black;
+  background-color: #d9d9d9 !important;
+  border-radius: 20px !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: black;
+  background-color: #86e2ff !important;
+}
+
+/* -------------------------------------- STORYLINE SECTION ----------------------------------- */
+
+.bg-storyline {
+  background-image: url("../assets/images/storyline-bg.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* -------------------------------------- TESTINOMIALS SECTION ----------------------------------- */
+
+.bg-testinomial {
+  background-image: url("../assets/images/testinomials/bg-testinomials.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.testinomial-boxShadow {
+  box-shadow: -9px 46px 74.3px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------------------------- PRICING SECTION ----------------------------------- */
+
+.bg-pricing {
+  background-image: url("../assets/images/pricing/bg-pricing-3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pricing-boxshadow {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 1);
+}
+
+.pricingCard-1{
+  background-image: url("../assets/images/pricing/price-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pricingCard-2{
+  background-image: url("../assets/images/pricing/price-4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pricingCard-3{
+  background-image: url("../assets/images/pricing/price-3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1100px) {
+  .pricingCard-1{
+    background-size: cover;
+  }
+  .pricingCard-2{
+    background-size: cover;
+  }
+  .pricingCard-3{
+    background-size: cover;
+  }
+  
+}
+
+/* -------------------------------------- CraftSection SECTION ----------------------------------- */
+
+/* .blur-bg {
+  background-image: url("../assets/images/our-work/bgNoBlur.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blur-bg:hover {
+  background-image: url("../assets/images/our-work/bgBlur.png");
+}
+
+.blur-bg-active {
+  background-image: url("../assets/images/our-work/bgBlur.png");
+}
+*/
+
+.allwork-hover-div {
+  visibility: hidden;
+  width: 350px;
+  height: 0;
+  color: #fff;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: height 0.5s;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.hover-div {
+  visibility: hidden;
+  width: 100%;
+  height: 0;
+  color: #fff;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: height 0.5s;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.ourWorkTypeCard:hover .allwork-hover-div {
+  visibility: visible;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 32px;
+}
+
+.ourWorkTypeCard:hover .hover-div {
+  visibility: visible;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 32px;
+}
+
+/* -------------------------------------- CONTACTUS PAGE ----------------------------------- */
+
+.bgContactUs {
+  background-image: url("../assets/images/contactus/bg-contactus.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contactInputShadow {
+  box-shadow: -15px 12px 30px 0px rgba(207, 242, 255, 0.5);
+}
+
+/* -------------------------------------- OUR WORK PAGE ----------------------------------- */
+
+.ourWorkTabHeading {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.ourWorkTabHeadingActive {
+  border-bottom: 3px solid #00c3ff;
+}
+
+/* Underline effect */
+.ourWorkTabHeading::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2.8px;
+  bottom: -5px;
+  left: 0;
+  background-color: #00c3ff;
+  transition: width 0.3s;
+}
+
+/* Hover effect */
+.ourWorkTabHeading:hover::before {
+  width: 100%;
 }

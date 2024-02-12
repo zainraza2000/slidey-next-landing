@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Antapani Semi';
+    src: url('Antapani-SemiBold.eot');
+    src: local('Antapani Semi Bold'), local('Antapani-SemiBold'),
+        url('Antapani-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Antapani-SemiBold.woff2') format('woff2'),
+        url('Antapani-SemiBold.woff') format('woff'),
+        url('Antapani-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Antapani';
+    src: url('Antapani-Bold.eot');
+    src: local('Antapani Bold'), local('Antapani-Bold'),
+        url('Antapani-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Antapani-Bold.woff2') format('woff2'),
+        url('Antapani-Bold.woff') format('woff'),
+        url('Antapani-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Antapani Extra';
+    src: url('Antapani-ExtraLight.eot');
+    src: local('Antapani Extra Light'), local('Antapani-ExtraLight'),
+        url('Antapani-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Antapani-ExtraLight.woff2') format('woff2'),
+        url('Antapani-ExtraLight.woff') format('woff'),
+        url('Antapani-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Antapani';
+    src: url('Antapani-Light.eot');
+    src: local('Antapani Light'), local('Antapani-Light'),
+        url('Antapani-Light.eot?#iefix') format('embedded-opentype'),
+        url('Antapani-Light.woff2') format('woff2'),
+        url('Antapani-Light.woff') format('woff'),
+        url('Antapani-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Antapani Extra';
+    src: url('Antapani-ExtraBold.eot');
+    src: local('Antapani Extra Bold'), local('Antapani-ExtraBold'),
+        url('Antapani-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Antapani-ExtraBold.woff2') format('woff2'),
+        url('Antapani-ExtraBold.woff') format('woff'),
+        url('Antapani-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Antapani';
+    src: url('Antapani-Medium.eot');
+    src: local('Antapani Medium'), local('Antapani-Medium'),
+        url('Antapani-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Antapani-Medium.woff2') format('woff2'),
+        url('Antapani-Medium.woff') format('woff'),
+        url('Antapani-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Antapani';
+    src: url('Antapani-Thin.eot');
+    src: local('Antapani Thin'), local('Antapani-Thin'),
+        url('Antapani-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Antapani-Thin.woff2') format('woff2'),
+        url('Antapani-Thin.woff') format('woff'),
+        url('Antapani-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Antapani';
+    src: url('Antapani-Black.eot');
+    src: local('Antapani Black'), local('Antapani-Black'),
+        url('Antapani-Black.eot?#iefix') format('embedded-opentype'),
+        url('Antapani-Black.woff2') format('woff2'),
+        url('Antapani-Black.woff') format('woff'),
+        url('Antapani-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Antapani';
+    src: url('Antapani-Regular.eot');
+    src: local('Antapani'), local('Antapani-Regular'),
+        url('Antapani-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Antapani-Regular.woff2') format('woff2'),
+        url('Antapani-Regular.woff') format('woff'),
+        url('Antapani-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
