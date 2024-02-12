@@ -1,8 +1,12 @@
+"use client";
 import { pricingData } from "@/data";
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 
 const PricingSection = () => {
+  const scrollToAbout = () => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <section className=" bg-pricing xl:w-4/5 md:w-[90%] flex flex-col justify-between md:gap-5 xl:gap-8 mx-auto py-28">
       <h3 className="fontGivonic xl:text-[52px] md:text-[36px] font-semibold xl:leading-[60px] md:leading-[50px] xl:ml-0 md:ml-8 capitalize w-fit">
@@ -22,7 +26,9 @@ const PricingSection = () => {
             } flex flex-col justify-between px-3 pt-3 pb-14`}
           >
             <div
-              className={` pricingCard-${item.id} flex flex-col xl:gap-3 md:gap-1 ${
+              className={` pricingCard-${
+                item.id
+              } flex flex-col xl:gap-3 md:gap-1 ${
                 item.id === 2 ? "justify-end py-4" : " justify-start py-8"
               } w-full rounded-[30px] xl:h-64 px-6`}
             >
@@ -52,7 +58,10 @@ const PricingSection = () => {
               ))}
             </div>
             <div className=" flex flex-col w-[80%] justify-center items-center gap-4 mx-auto">
-              <button className=" w-full bg-[#ECECEC] xl:text-2xl md:text-lg font-medium rounded-[15px] py-3 capitalize transition-all duration-300 ease-in-out transform-gpu hover:bg-[#86e2ff] hover:scale-105">
+              <button
+                className=" w-full bg-[#ECECEC] xl:text-2xl md:text-lg font-medium rounded-[15px] py-3 capitalize transition-all duration-300 ease-in-out transform-gpu hover:bg-[#86e2ff] hover:scale-105"
+                onClick={scrollToAbout}
+              >
                 Get Started
               </button>
             </div>

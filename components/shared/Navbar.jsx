@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import trustPilotImage from "@/assets/images/shared/trustpilot.png";
 
-const Navbar = ({ logo }) => {
+const Navbar = ({ logo, scrollToAbout }) => {
   return (
     <nav className=" flex justify-between items-center">
       <Image src={logo} alt="logo" className="" />
@@ -11,12 +11,12 @@ const Navbar = ({ logo }) => {
         <Link href={"https://www.trustpilot.com/review/slideyllc.com"}>
           <Image src={trustPilotImage} width={120} className="" />
         </Link>
-        <Link
-          href={"/contactus"}
+        <button
           className=" bg-[#191922] text-white rounded-[20px] pt-2 pb-3 px-6 "
+          onClick={scrollToAbout}
         >
           Contact Us
-        </Link>
+        </button>
       </ul>
     </nav>
   );

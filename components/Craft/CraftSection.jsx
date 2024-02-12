@@ -33,10 +33,10 @@ const CraftSection = () => {
             <Image src={icon2} alt="icon2" className="mb-2" />
           </div>
           {/* Recent */}
-          <button className=" flex items-center justify-center gap-3 w-fit text-white border border-[#fff] rounded-3xl px-5 py-2">
+          {/* <button className=" flex items-center justify-center gap-3 w-fit text-white border border-[#fff] rounded-3xl px-5 py-2">
             <span>Recent</span>
             <Image src={downIcon} alt="downIcon" />
-          </button>
+          </button> */}
           {/* Cards*/}
           <div className=" grid grid-cols-3 md:gap-5 xl:gap-8">
             {craftData.map((item, i) => (
@@ -65,10 +65,10 @@ const CraftSection = () => {
             ))}
           </div>
           {/* View All */}
-          <button className=" flex items-center justify-center gap-3 w-fit bg-[#86e2ff] rounded-3xl px-5 py-2 mx-auto">
+          {/* <button className=" flex items-center justify-center gap-3 w-fit bg-[#86e2ff] rounded-3xl px-5 py-2 mx-auto">
             <span>View All</span>
             <Image src={craftArrowIcon} alt="downIcon" />
-          </button>
+          </button> */}
         </div>
       </section>
       <ImageModal

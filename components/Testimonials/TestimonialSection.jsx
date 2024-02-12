@@ -110,7 +110,7 @@ const TestimonialSection = () => {
         ))}
       </div>
       <button
-        className=" absolute bottom-[38%] 2xl:right-48 xl:right-20 md:right-24"
+        className=" absolute xl:bottom-[38%] md:bottom-[27%] 2xl:right-48 xl:right-20 md:right-24"
         onClick={handleSlider}
         disabled={transitioning}
       >

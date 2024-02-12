@@ -43,6 +43,9 @@ const cardsVariants = {
 
 const HeroSection = () => {
   const [currentCards, setCurrentCards] = useState(1);
+  const scrollToAbout = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <>
@@ -59,7 +62,7 @@ const HeroSection = () => {
           onClick={() => setCurrentCards((prev) => (prev === 1 ? 2 : 1))}
         />
         <div className=" text-white z-50 w-5/6 pt-8">
-          <Navbar logo={slideyLogo} />
+          <Navbar logo={slideyLogo} scrollToAbout={scrollToAbout} />
           <div className=" fontGivonic flex justify-between mt-20">
             <h1 className=" w-[40%] 2xl:text-6xl xl:text-5xl md:text-4xl font-semibold tracking-wider 2xl:leading-tight xl:leading-snug md:leading-normal">
               Designing Decks, Pitch Perfectly!
@@ -71,6 +74,7 @@ const HeroSection = () => {
               <button
                 className=" xl:text-[22px] md:text-[20px] font-semibold text-[#090909] bg-[#86e2ff] rounded-[50px] py-3 px-6 tracking-wider
               transition-all duration-300 ease-in-out transform-gpu hover:scale-105"
+              onClick={scrollToAbout}
               >
                 Claim Your Free Slide
               </button>

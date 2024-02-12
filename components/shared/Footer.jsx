@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import footerImg from "@/assets/images/footer-img.png";
@@ -13,6 +14,9 @@ import trustPilotImg from "@/assets/images/shared/trustpilot.png";
 import Link from "next/link";
 
 const Footer = () => {
+  const scrollToAbout = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <section className=" bg-[#0F0F16] mt-20">
       <div className="xl:w-4/5 md:w-[85%] flex flex-col justify-center items-center gap-16 mx-auto py-24">
@@ -24,6 +28,7 @@ const Footer = () => {
             <button
               className=" xl:text-[22px] md:text-[18px] font-semibold text-[#090909] bg-[#86E2FF] rounded-[15px] py-3 xl:px-6 md:px-4 tracking-wider
             transition-all duration-300 ease-in-out transform-gpu hover:scale-105"
+            onClick={scrollToAbout}
             >
               Claim Your Free Slide
             </button>
@@ -64,25 +69,25 @@ const Footer = () => {
             <h3 className=" text-lg text-[#fff] mb-0">Find Us On</h3>
             <div className=" flex items-center gap-5">
               <Link
-                href={"#"}
+                href={"/"}
                 className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
               >
                 <RiInstagramLine className=" text-[26px]" />
               </Link>
               <Link
-                href={"#"}
+                href={"/"}
                 className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
               >
                 <FaPinterestP className=" text-[26px]" />
               </Link>
               <Link
-                href={"#"}
+                href={"/"}
                 className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
               >
                 <RiLinkedinFill className=" text-[26px]" />
               </Link>
               <Link
-                href={"#"}
+                href={"/"}
                 className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
               >
                 <BiBasketball className=" text-[26px]" />

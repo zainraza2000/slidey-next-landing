@@ -2,41 +2,46 @@
 import craftImg1 from "@/assets/images/craft/craft-img-1.png";
 import craftImg1b from "@/assets/images/craft/craft-img-1b.png";
 import craftImg2 from "@/assets/images/craft/craft-img-2.png";
+import craftImg2b from "@/assets/images/craft/craft-img-2b.png";
 import craftImg3 from "@/assets/images/craft/craft-img-3.png";
+import craftImg3b from "@/assets/images/craft/craft-img-3b.png";
 import craftImg4 from "@/assets/images/craft/craft-img-4.png";
+import craftImg4b from "@/assets/images/craft/craft-img-4b.png";
 import craftImg5 from "@/assets/images/craft/craft-img-5.png";
+import craftImg5b from "@/assets/images/craft/craft-img-5b.png";
 import craftImg6 from "@/assets/images/craft/craft-img-6.png";
+import craftImg6b from "@/assets/images/craft/craft-img-6b.png";
 
 export const craftData = [
   {
-    title: "Let's Hop",
+    title: "Karbonx",
     thumbnailSrc: craftImg1,
     modalSrc: craftImg1b,
   },
   {
-    title: "Triver",
+    title: "Shepherd",
     thumbnailSrc: craftImg2,
-    modalSrc: craftImg1b,
+    modalSrc: craftImg2b,
   },
   {
     title: "Writer",
     thumbnailSrc: craftImg3,
-    modalSrc: craftImg1b,
+    modalSrc: craftImg3b,
   },
   {
-    title: "The Numbers",
+    title: "Gamr",
     thumbnailSrc: craftImg4,
-    modalSrc: craftImg1b,
+    modalSrc: craftImg4b,
   },
   {
     title: "The Floorr",
     thumbnailSrc: craftImg5,
-    modalSrc: craftImg1b,
+    modalSrc: craftImg5b,
   },
   {
     title: "Native Voice",
     thumbnailSrc: craftImg6,
-    modalSrc: craftImg1b,
+    modalSrc: craftImg6b,
   },
 ];
 
