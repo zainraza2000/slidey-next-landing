@@ -23,11 +23,11 @@ export default function Home() {
       <RankingSection />
       <StorylineSection />
       <ProvenSection />
-      <CraftSection />
-      <TestimonialSection />
-      <PricingSection />
+      {/* <CraftSection /> */}
+      {/* <TestimonialSection /> */}
+      {/* <PricingSection /> */}
       <FAQ />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

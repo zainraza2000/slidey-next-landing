@@ -63,31 +63,31 @@ const FAQ = () => {
   };
   return (
     <>
-      <div className="fontGivonic mx-auto mb-28  w-4/5 flex flex-col gap-10">
+      <div className="fontGivonic mx-auto md:mb-28 mb-14  w-4/5 flex flex-col md:gap-10 gap-8">
         {/* FAQ */}
-        <h3 className="fontGivonic xl:text-[52px] md:text-[36px] font-semibold xl:leading-[60px] md:leading-[50px] w-full">
+        <h3 className="fontGivonic xl:text-[52px] md:text-[36px] text-base font-semibold xl:leading-[60px] md:leading-[50px] w-full">
           Frequently Asked
-          <span className=" pt-2 px-[10px] pb-0 bg-[#86e2ff] text-black rounded-lg mx-3">
+          <span className=" pt-2 px-[10px] md:pb-0 pb-1 bg-[#86e2ff] text-black rounded-lg mx-3">
             Questions
           </span>
         </h3>
         {/* ACCORDIANCE */}
         <div className="w-full flex flex-col gap-3 space-y-1 ">
           {FaqData.map((item, i) => (
-            <div className=" xl:py-7 md:py-4 px-10 bg-[#E0F7FF]  rounded-[20px] cursor-pointer"
+            <div className=" xl:py-7 md:py-4 py-[10px] md:px-10 px-4 bg-[#E0F7FF]  md:rounded-[20px] rounded-lg cursor-pointer"
             onClick={() => handleAccordionClick(i)}>
               <button
-                className={`flex w-full items-start justify-between text-left transition-all duration-300 ease-in-out ${
+                className={`flex w-full md:items-start items-center justify-between text-left transition-all duration-300 ease-in-out ${
                   openIndexes[i] && "text-[#1F8090]"
                 }`}
                 data-track="faq-button-how-do-i-sign-up?"
                 type="button"
                 
               >
-                <span className={` xl:text-[22px] md:text-lg font-semibold leading-7 `}>
+                <span className={` xl:text-[22px] md:text-lg text-sm font-semibold md:leading-7 leading-5 `}>
                   {item.question}
                 </span>
-                <span className="ml-6 flex h-7 items-center transition-all duration-300 ">
+                <span className="md:ml-6 ml-1  flex md:h-7 h-full items-center transition-all duration-300 ">
                   {openIndexes[i] ? (
                     <IoClose className=" text-2xl text-[#6497A8] transition-all duration-300 " />
                   ) : (
@@ -97,7 +97,7 @@ const FAQ = () => {
               </button>
               {openIndexes[i] && (
                 <p
-                  className={`mt-5 xl:text-lg md:text-[15px] font-medium leading-7 transition-all duration-300 ease-in-out ${
+                  className={`md:mt-5 mt-3 xl:text-lg md:text-[15px] text-[12px] font-medium text-justify md:leading-7 leading-4 transition-all duration-300 ease-in-out ${
                     openIndexes[i] ? "max-h-[1000px]" : "max-h-0"
                   }`}
                 >

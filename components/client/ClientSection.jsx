@@ -7,19 +7,19 @@ import { usePathname } from "next/navigation";
 const ClientSection = () => {
   const pathname = usePathname();
   return (
-    <section className=" xl:w-4/5 md:w-[85%] flex flex-col justify-between items-center md:gap-5 xl:gap-8 mx-auto">
+    <section className=" xl:w-4/5 md:w-[85%] w-[90%] flex flex-col justify-between items-center md:gap-5 xl:gap-8 mx-auto">
       <h3
-        className={`fontGivonic xl:text-[52px] md:text-[36px] font-semibold w-full ${
+        className={`fontGivonic xl:text-[52px] md:text-[36px] text-base font-semibold w-full ${
           pathname === "/" ? "block" : " hidden"
         } `}
       >
         Our
-        <span className=" pt-2 px-[10px] pb-0 bg-[#86e2ff] text-black rounded-lg mx-3">
+        <span className=" pt-2 px-[10px] md:pb-0 pb-1 bg-[#86e2ff] text-black rounded-lg md:mx-3 mx-2">
           Clients
         </span>
       </h3>
-      <div className=" w-full flex flex-col gap-6  bg-[#fff] rounded-[20px] clientCard-boxShadow pt-8 pb-10">
-        <p className="fontGivonic text-center 2xl:text-[24px] xl:text-xl md:text-lg font-medium">
+      <div className=" w-full flex flex-col gap-6  bg-[#fff] md:rounded-[20px] rounded-xl clientCard-boxShadow md:pt-8 pt-5 md:pb-10 pb-4">
+        <p className="fontGivonic text-center 2xl:text-[24px] xl:text-xl md:text-lg text-[10px] font-medium">
           <span className=" font-semibold  "> 15000+</span> slides delivered to{" "}
           <span className=" font-semibold  ">500+</span> clients across the
           globe

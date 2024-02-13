@@ -44,31 +44,31 @@ const ClientSiderRTL = () => {
   return (
     <Slider {...settings}>
       <div className="slide">
-        <Image src={image1} alt="logo" className=" mx-auto md:w-16 md:h-16 xl:w-auto xl:h-auto" />
+        <Image src={image1} alt="logo" className=" mx-auto w-8 h-8 md:w-16 md:h-16 xl:w-auto xl:h-auto" />
       </div>
       <div className="slide">
-        <Image src={image2} alt="logo" className=" mx-auto md:w-24 md:h-12 xl:w-auto xl:h-auto" />
+        <Image src={image2} alt="logo" className=" mx-auto w-12 h-5 md:w-24 md:h-12 xl:w-auto xl:h-auto" />
       </div>
       <div className="slide">
-        <Image src={image3} alt="logo" className=" mx-auto md:w-28 md:h-10 xl:w-auto xl:h-auto" />
+        <Image src={image3} alt="logo" className=" mx-auto w-12 h-4 md:w-28 md:h-10 xl:w-auto xl:h-auto" />
       </div>
       <div className="slide">
-        <Image src={image4} alt="logo" className=" mx-auto md:w-16 md:h-20 xl:w-auto xl:h-auto" />
+        <Image src={image4} alt="logo" className=" mx-auto w-8 h-8 md:w-16 md:h-20 xl:w-auto xl:h-auto" />
       </div>
       <div className="slide">
-        <Image src={image5} alt="logo" className=" mx-auto md:w-20 md:h-12 xl:w-auto xl:h-auto" />
+        <Image src={image5} alt="logo" className=" mx-auto w-10 h-5 md:w-20 md:h-12 xl:w-auto xl:h-auto" />
       </div>
       <div className="slide">
-        <Image src={image6} alt="logo" className=" mx-auto md:w-20 md:h-16 xl:w-auto xl:h-auto" />
+        <Image src={image6} alt="logo" className=" mx-auto w-10 h-8 md:w-20 md:h-16 xl:w-auto xl:h-auto" />
       </div>
       <div className="slide">
-        <Image src={image7} alt="logo" className=" mx-auto md:w-20 md:h-16 xl:w-auto xl:h-auto" />
+        <Image src={image7} alt="logo" className=" mx-auto w-8 h-8 md:w-20 md:h-16 xl:w-auto xl:h-auto" />
       </div>
       <div className="slide">
-        <Image src={image8} alt="logo" className=" mx-auto md:w-24 md:h-12 xl:w-auto xl:h-auto" />
+        <Image src={image8} alt="logo" className=" mx-auto w-10 h-5 md:w-24 md:h-12 xl:w-auto xl:h-auto" />
       </div>
       <div className="slide">
-        <Image src={image9} alt="logo" className=" mx-auto md:w-20 md:h-10 xl:w-auto xl:h-auto" />
+        <Image src={image9} alt="logo" className=" mx-auto w-10 h-5 md:w-20 md:h-10 xl:w-auto xl:h-auto" />
       </div>
     </Slider>
   );
