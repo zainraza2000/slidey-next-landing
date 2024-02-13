@@ -81,7 +81,7 @@ const TestimonialSection = () => {
   }, []);
 
   return (
-    <section className=" relative bg-testinomial xl:w-4/5 md:w-[90%] flex flex-col justify-between items-center md:gap-5 xl:gap-8 mx-auto pt-24">
+    <section className=" relative bg-testinomial xl:w-4/5 md:w-[85%] flex flex-col justify-between items-center md:gap-8 xl:gap-8 mx-auto pt-24">
       <h3 className="fontGivonic xl:text-[52px] md:text-[36px] font-semibold xl:leading-[60px] md:leading-[50px] xl:ml-0 md:ml-5 w-full">
         Client
         <span className=" pt-2 px-[10px] pb-0 bg-[#86e2ff] text-black rounded-lg mx-3">
@@ -110,11 +110,11 @@ const TestimonialSection = () => {
         ))}
       </div>
       <button
-        className=" absolute xl:bottom-[38%] md:bottom-[27%] 2xl:right-48 xl:right-20 md:right-24"
+        className=" absolute xl:bottom-[30%] md:bottom-[27%] 2xl:right-48 xl:right-16 md:right-24"
         onClick={handleSlider}
         disabled={transitioning}
       >
-        <Image src={nextArrow} alt="nextArrow" className=" xl:w-[109px] md:w-[80px]"/>
+        <Image src={nextArrow} alt="nextArrow" className=" xl:w-[105px] md:w-[70px]"/>
       </button>
     </section>
   );

@@ -44,12 +44,12 @@ const cardsVariants = {
 const HeroSection = () => {
   const [currentCards, setCurrentCards] = useState(1);
   const scrollToAbout = () => {
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <>
-      <div className="relative flex justify-center h-screen w-full xl:pt-11 md:pt-6 xl:px-20 md:px-8">
+      <div className="relative flex justify-center h-screen w-full 2xl:pt-11 xl:pt-8 md:pt-6 2xl:px-20 xl:px-16 md:px-8">
         <Image
           src={mainBg}
           alt="main bg"
@@ -57,39 +57,43 @@ const HeroSection = () => {
         />
         <Image
           src={exploreImg}
-          className=" spinning-div absolute 2xl:w-[170px] xl:w-[150px] md:w-[120px] xl:-bottom-12 md:bottom-0 z-[2000000]"
+          className=" spinning-div absolute 2xl:w-[170px] xl:w-[150px] md:w-[110px] xl:-bottom-12 md:bottom-0 z-[2000000]"
           alt="explore Img"
           onClick={() => setCurrentCards((prev) => (prev === 1 ? 2 : 1))}
         />
         <div className=" text-white z-50 w-5/6 pt-8">
           <Navbar logo={slideyLogo} scrollToAbout={scrollToAbout} />
-          <div className=" fontGivonic flex justify-between mt-20">
-            <h1 className=" w-[40%] 2xl:text-6xl xl:text-5xl md:text-4xl font-semibold tracking-wider 2xl:leading-tight xl:leading-snug md:leading-normal">
+          <div className=" fontGivonic flex justify-between 2xl:mt-20 xl:mt-14 md:mt-10">
+            <h1 className=" w-[40%] 2xl:text-6xl xl:text-[30px] md:text-[24px] font-semibold tracking-wider 2xl:leading-tight xl:leading-snug md:leading-tight">
               Designing Decks, Pitch Perfectly!
             </h1>
-            <div className=" 2xl:w-[25%] xl:w-[35%] md:w-[40%] flex flex-col gap-3">
-              <p className=" xl:text-xl md:text-lg font-normal text-[#959595] tracking-wider text-justify">
+            <div className=" 2xl:w-[25%] xl:w-[27%] md:w-[35%] flex flex-col gap-3">
+              <p className=" xl:text-base md:text-[15px] font-normal text-[#959595] tracking-wider text-justify">
                 Transforming Presentations into Powerful Narratives!
               </p>
               <button
-                className=" xl:text-[22px] md:text-[20px] font-semibold text-[#090909] bg-[#86e2ff] rounded-[50px] py-3 px-6 tracking-wider
+                className=" 2xl:text-[22px] xl:text-[18px] md:text-[16px] font-semibold text-[#090909] bg-[#86e2ff] rounded-[50px] py-3 px-6 tracking-wider
               transition-all duration-300 ease-in-out transform-gpu hover:scale-105"
-              onClick={scrollToAbout}
+                onClick={scrollToAbout}
               >
                 Claim Your Free Slide
               </button>
             </div>
           </div>
-          <div className=" flex justify-between mt-20">
-            <div className=" flex flex-col gap-3">
-              <h3 className=" fontAntapani text-5xl font-semibold">5K+</h3>
-              <p className=" fontGivonic text-[#959595]">
+          <div className=" flex justify-between 2xl:mt-20 xl:mt-14 md:mt-6">
+            <div className=" flex flex-col 2xl:gap-3 md:gap-1">
+              <h3 className=" fontAntapani 2xl:text-5xl md:text-[32px] font-semibold">
+                5K+
+              </h3>
+              <p className=" fontGivonic 2xl:text-base md:text-sm text-[#959595]">
                 Aesthetic Wonders Created
               </p>
             </div>
-            <div className=" flex flex-col gap-3">
-              <h3 className=" fontAntapani text-5xl font-semibold">$70M</h3>
-              <p className=" fontGivonic text-[#959595] text-end tracking-[10px] -mr-2">
+            <div className=" flex flex-col 2xl:gap-3 md:gap-1">
+              <h3 className=" fontAntapani 2xl:text-5xl md:text-[32px] font-semibold">
+                $70M
+              </h3>
+              <p className=" fontGivonic 2xl:text-base md:text-sm text-[#959595] text-end tracking-[10px] -mr-2">
                 RAISED
               </p>
             </div>
@@ -106,8 +110,8 @@ const HeroSection = () => {
                   variants={cardsVariants}
                   className="absolute 
                   2xl:top-[120px] 2xl:hover:top-[110px] 2xl:left-20 2xl:hover:left-16 bg-lime-700 2xl:w-[270px] 2xl:h-[390px]
-                  xl:top-12 xl:left-28 xl:hover:left-24 xl:w-[240px] xl:h-[350px]
-                  md:top-12 md:left-28 md:hover:left-24 md:w-[240px] md:h-[350px]
+                  xl:-top-5 xl:left-[120px] xl:hover:left-28 xl:w-[235px] xl:h-[340px]
+                  md:top-[30px] md:left-36 md:hover:left-32 md:w-[190px] md:h-[270px]
                    rounded-[30px] -z-10 -rotate-12 transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                   style={{ rotate: "-12deg" }}
                 >
@@ -117,8 +121,8 @@ const HeroSection = () => {
                   variants={cardsVariants}
                   className="absolute 
                   2xl:top-12 2xl:hover:top-[38px] bg-orange-400 2xl:w-[310px] 2xl:h-[470px] 2xl:hover:w-[320px] 2xl:hover:h-[480px]
-                  xl:-top-1 xl:hover:-top-2 xl:w-[280px] xl:h-[400px] xl:hover:w-[290px] xl:hover:h-[410px]
-                  md:-top-1 md:hover:-top-2 md:w-[270px] md:h-[390px] md:hover:w-[280px] md:hover:h-[400px]
+                  xl:-top-16 xl:hover:-top-[70px] xl:w-[270px] xl:h-[350px] xl:hover:w-[280px] xl:hover:h-[360px]
+                  md:-top-1 md:hover:-top-2 md:w-[220px] md:h-[300px] md:hover:w-[230px] md:hover:h-[310px]
                    rounded-[30px] transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                 >
                   <ImageSecion imgSrc={heroSectionCardImg2} />
@@ -127,8 +131,8 @@ const HeroSection = () => {
                   variants={cardsVariants}
                   className="absolute 
                   2xl:top-[120px] 2xl:hover:top-[105px] 2xl:right-12 2xl:hover:right-10 bg-stone-600 2xl:w-[280px] 2xl:h-[420px]  2xl:hover:h-[435px]
-                  xl:top-10 xl:hover:top-8 xl:right-24 xl:hover:right-20 xl:w-[250px] xl:h-[380px] xl:hover:h-[395px]
-                  md:top-10 md:hover:top-8 md:right-20 md:hover:right-16  md:w-[250px] md:h-[380px] 
+                  xl:-top-5 xl:hover:-top-6 xl:right-24 xl:hover:right-[90px] xl:w-[240px] xl:h-[350px] xl:hover:h-[360px]
+                  md:top-[30px] md:hover:top-7 md:right-36 md:hover:right-32  md:w-[190px] md:h-[270px] 
                     rounded-[30px]  transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                   style={{ rotate: "10deg" }}
                 >
@@ -142,8 +146,8 @@ const HeroSection = () => {
                   variants={cardsVariants}
                   className="absolute 
                   2xl:top-[120px] 2xl:hover:top-[110px] 2xl:left-20 2xl:hover:left-16 bg-lime-700 2xl:w-[270px] 2xl:h-[390px]
-                  xl:top-12 xl:left-28 xl:hover:left-24 xl:w-[240px] xl:h-[350px]
-                  md:top-12 md:left-28 md:hover:left-24 md:w-[240px] md:h-[350px]
+                  xl:-top-5 xl:left-[120px] xl:hover:left-28 xl:w-[235px] xl:h-[340px]
+                  md:top-[30px] md:left-36 md:hover:left-32 md:w-[190px] md:h-[270px]
                    rounded-[30px] -z-10 -rotate-12 transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                   style={{ rotate: "-12deg" }}
                 >
@@ -153,8 +157,8 @@ const HeroSection = () => {
                   variants={cardsVariants}
                   className="absolute 
                   2xl:top-12 2xl:hover:top-[38px] bg-orange-400 2xl:w-[310px] 2xl:h-[470px] 2xl:hover:w-[320px] 2xl:hover:h-[480px]
-                  xl:-top-1 xl:hover:-top-2 xl:w-[280px] xl:h-[400px] xl:hover:w-[290px] xl:hover:h-[410px]
-                  md:-top-1 md:hover:-top-2 md:w-[270px] md:h-[390px] md:hover:w-[280px] md:hover:h-[400px]
+                  xl:-top-16 xl:hover:-top-[70px] xl:w-[270px] xl:h-[350px] xl:hover:w-[280px] xl:hover:h-[360px]
+                  md:-top-1 md:hover:-top-2 md:w-[220px] md:h-[300px] md:hover:w-[230px] md:hover:h-[310px]
                    rounded-[30px] transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                 >
                   <ImageSecion imgSrc={heroSectionCardImg5} />
@@ -163,8 +167,8 @@ const HeroSection = () => {
                   variants={cardsVariants}
                   className="absolute 
                   2xl:top-[120px] 2xl:hover:top-[105px] 2xl:right-12 2xl:hover:right-10 bg-stone-600 2xl:w-[280px] 2xl:h-[420px]  2xl:hover:h-[435px]
-                  xl:top-10 xl:hover:top-8 xl:right-24 xl:hover:right-20 xl:w-[250px] xl:h-[380px] xl:hover:h-[395px]
-                  md:top-10 md:hover:top-8 md:right-20 md:hover:right-16  md:w-[250px] md:h-[380px] 
+                  xl:-top-5 xl:hover:-top-6 xl:right-24 xl:hover:right-[90px] xl:w-[240px] xl:h-[350px] xl:hover:h-[360px]
+                  md:top-[30px] md:hover:top-7 md:right-36 md:hover:right-32  md:w-[190px] md:h-[270px] 
                     rounded-[30px]  transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                   style={{ rotate: "10deg" }}
                 >
@@ -177,7 +181,7 @@ const HeroSection = () => {
       </div>
       <Image
         src={bdDownImg}
-        className=" relative w-full z-[2000] 2xl:-mt-[118px] xl:-mt-[92px] md:-mt-[102px] 2xl:px-[94px] xl:px-12"
+        className=" relative w-full z-[2000] 2xl:-mt-[118px] xl:-mt-[92px] md:-mt-[102px] 2xl:px-[94px] xl:px-12 md:px-[34px]"
         alt="bdDownImg"
       />
     </>

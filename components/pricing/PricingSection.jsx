@@ -15,7 +15,7 @@ const PricingSection = () => {
           plans
         </span>
       </h3>
-      <div className=" w-full flex items-end gap-4 -mt-10">
+      <div className=" w-full flex items-end gap-4 -mt-4">
         {pricingData.map((item, i) => (
           <div
             key={i}
