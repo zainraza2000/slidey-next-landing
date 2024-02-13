@@ -6,7 +6,7 @@ const ImageSecion = ({imgSrc}) => {
     <Image
       src={imgSrc}
       alt="heroSectionCardImg1"
-      className=" w-full h-full rounded-[30px]"
+      className=" w-full h-full md:rounded-[30px] rounded-[12px]"
     />
   );
 };

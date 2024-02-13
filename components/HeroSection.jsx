@@ -49,30 +49,30 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="relative flex justify-center h-screen w-full 2xl:pt-11 xl:pt-8 md:pt-6 2xl:px-20 xl:px-16 md:px-8">
+      <div className="relative flex justify-center h-screen w-full 2xl:pt-11 xl:pt-8 md:pt-6 pt-4 2xl:px-20 xl:px-16 md:px-8 px-6">
         <Image
           src={mainBg}
           alt="main bg"
-          className=" absolute h-full 2xl:w-[90%]  md:w-[93%] mx-auto "
+          className=" absolute 2xl:w-[90%]  md:w-[93%] w-[90%] md:h-full h-[40%]  mx-auto "
         />
         <Image
           src={exploreImg}
-          className=" spinning-div absolute 2xl:w-[170px] xl:w-[150px] md:w-[110px] xl:-bottom-12 md:bottom-0 z-[2000000]"
+          className=" spinning-div absolute 2xl:w-[170px] xl:w-[150px] md:w-[110px] xl:-bottom-12 md:bottom-0 bottom-[59%] w-[40px] z-[2000000]"
           alt="explore Img"
           onClick={() => setCurrentCards((prev) => (prev === 1 ? 2 : 1))}
         />
-        <div className=" text-white z-50 w-5/6 pt-8">
+        <div className=" text-white z-50 md:w-5/6 w-[90%] md:pt-8 pt-4">
           <Navbar logo={slideyLogo} scrollToAbout={scrollToAbout} />
-          <div className=" fontGivonic flex justify-between 2xl:mt-20 xl:mt-14 md:mt-10">
-            <h1 className=" w-[40%] 2xl:text-6xl xl:text-[30px] md:text-[24px] font-semibold tracking-wider 2xl:leading-tight xl:leading-snug md:leading-tight">
+          <div className=" fontGivonic flex justify-between 2xl:mt-20 xl:mt-14 md:mt-10 mt-4">
+            <h1 className=" md:w-[40%] w-[50%] 2xl:text-6xl xl:text-[30px] md:text-[24px] text-sm font-semibold tracking-wider 2xl:leading-tight xl:leading-snug md:leading-tight">
               Designing Decks, Pitch Perfectly!
             </h1>
-            <div className=" 2xl:w-[25%] xl:w-[27%] md:w-[35%] flex flex-col gap-3">
-              <p className=" xl:text-base md:text-[15px] font-normal text-[#959595] tracking-wider text-justify">
+            <div className=" 2xl:w-[25%] xl:w-[27%] md:w-[35%] w-[48%] flex flex-col md:gap-3 gap-2">
+              <p className=" xl:text-base md:text-[15px] text-[8px] font-normal text-[#959595] tracking-wider text-justify">
                 Transforming Presentations into Powerful Narratives!
               </p>
               <button
-                className=" 2xl:text-[22px] xl:text-[18px] md:text-[16px] font-semibold text-[#090909] bg-[#86e2ff] rounded-[50px] py-3 px-6 tracking-wider
+                className=" 2xl:text-[22px] xl:text-[18px] md:text-[16px] text-[10px] font-semibold text-[#090909] bg-[#86e2ff] rounded-[50px] md:py-3 md:px-6 py-2 px-2 tracking-wider
               transition-all duration-300 ease-in-out transform-gpu hover:scale-105"
                 onClick={scrollToAbout}
               >
@@ -80,20 +80,20 @@ const HeroSection = () => {
               </button>
             </div>
           </div>
-          <div className=" flex justify-between 2xl:mt-20 xl:mt-14 md:mt-6">
-            <div className=" flex flex-col 2xl:gap-3 md:gap-1">
-              <h3 className=" fontAntapani 2xl:text-5xl md:text-[32px] font-semibold">
+          <div className=" flex justify-between 2xl:mt-20 xl:mt-14 md:mt-6 mt-4">
+            <div className=" flex flex-col 2xl:gap-3 md:gap-1 gap-0">
+              <h3 className=" fontAntapani 2xl:text-5xl md:text-[32px] text-[13px] font-semibold">
                 5K+
               </h3>
-              <p className=" fontGivonic 2xl:text-base md:text-sm text-[#959595]">
+              <p className=" fontGivonic 2xl:text-base md:text-sm text-[7px] text-[#959595]">
                 Aesthetic Wonders Created
               </p>
             </div>
-            <div className=" flex flex-col 2xl:gap-3 md:gap-1">
-              <h3 className=" fontAntapani 2xl:text-5xl md:text-[32px] font-semibold">
+            <div className=" flex flex-col 2xl:gap-3 md:gap-1 gap-0">
+              <h3 className=" fontAntapani 2xl:text-5xl md:text-[32px] text-[13px] font-semibold">
                 $70M
               </h3>
-              <p className=" fontGivonic 2xl:text-base md:text-sm text-[#959595] text-end tracking-[10px] -mr-2">
+              <p className=" fontGivonic 2xl:text-base md:text-sm text-[7px] text-[#959595] text-end md:tracking-[10px] tracking-[3px] md:-mr-2 -mr-1">
                 RAISED
               </p>
             </div>
@@ -112,7 +112,8 @@ const HeroSection = () => {
                   2xl:top-[120px] 2xl:hover:top-[110px] 2xl:left-20 2xl:hover:left-16 bg-lime-700 2xl:w-[270px] 2xl:h-[390px]
                   xl:-top-5 xl:left-[120px] xl:hover:left-28 xl:w-[235px] xl:h-[340px]
                   md:top-[30px] md:left-36 md:hover:left-32 md:w-[190px] md:h-[270px]
-                   rounded-[30px] -z-10 -rotate-12 transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                  top-5 left-9 w-[80px] h-[110px]
+                  md:rounded-[30px] rounded-[12px] -z-10 -rotate-12 transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                   style={{ rotate: "-12deg" }}
                 >
                   <ImageSecion imgSrc={heroSectionCardImg1} />
@@ -123,7 +124,8 @@ const HeroSection = () => {
                   2xl:top-12 2xl:hover:top-[38px] bg-orange-400 2xl:w-[310px] 2xl:h-[470px] 2xl:hover:w-[320px] 2xl:hover:h-[480px]
                   xl:-top-16 xl:hover:-top-[70px] xl:w-[270px] xl:h-[350px] xl:hover:w-[280px] xl:hover:h-[360px]
                   md:-top-1 md:hover:-top-2 md:w-[220px] md:h-[300px] md:hover:w-[230px] md:hover:h-[310px]
-                   rounded-[30px] transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                  top-1  w-[90px] h-[130px] 
+                   md:rounded-[30px] rounded-[12px] transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                 >
                   <ImageSecion imgSrc={heroSectionCardImg2} />
                 </motion.li>
@@ -133,7 +135,8 @@ const HeroSection = () => {
                   2xl:top-[120px] 2xl:hover:top-[105px] 2xl:right-12 2xl:hover:right-10 bg-stone-600 2xl:w-[280px] 2xl:h-[420px]  2xl:hover:h-[435px]
                   xl:-top-5 xl:hover:-top-6 xl:right-24 xl:hover:right-[90px] xl:w-[240px] xl:h-[350px] xl:hover:h-[360px]
                   md:top-[30px] md:hover:top-7 md:right-36 md:hover:right-32  md:w-[190px] md:h-[270px] 
-                    rounded-[30px]  transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                  top-5 right-9 w-[80px] h-[110px]
+                  md:rounded-[30px] rounded-[12px]  transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                   style={{ rotate: "10deg" }}
                 >
                   <ImageSecion imgSrc={heroSectionCardImg3} />
@@ -148,7 +151,8 @@ const HeroSection = () => {
                   2xl:top-[120px] 2xl:hover:top-[110px] 2xl:left-20 2xl:hover:left-16 bg-lime-700 2xl:w-[270px] 2xl:h-[390px]
                   xl:-top-5 xl:left-[120px] xl:hover:left-28 xl:w-[235px] xl:h-[340px]
                   md:top-[30px] md:left-36 md:hover:left-32 md:w-[190px] md:h-[270px]
-                   rounded-[30px] -z-10 -rotate-12 transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                  top-5 left-9 w-[80px] h-[110px]
+                  md:rounded-[30px] rounded-[12px] -z-10 -rotate-12 transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                   style={{ rotate: "-12deg" }}
                 >
                   <ImageSecion imgSrc={heroSectionCardImg4} />
@@ -159,7 +163,8 @@ const HeroSection = () => {
                   2xl:top-12 2xl:hover:top-[38px] bg-orange-400 2xl:w-[310px] 2xl:h-[470px] 2xl:hover:w-[320px] 2xl:hover:h-[480px]
                   xl:-top-16 xl:hover:-top-[70px] xl:w-[270px] xl:h-[350px] xl:hover:w-[280px] xl:hover:h-[360px]
                   md:-top-1 md:hover:-top-2 md:w-[220px] md:h-[300px] md:hover:w-[230px] md:hover:h-[310px]
-                   rounded-[30px] transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                  top-1  w-[90px] h-[130px] 
+                   md:rounded-[30px] rounded-[12px] transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                 >
                   <ImageSecion imgSrc={heroSectionCardImg5} />
                 </motion.li>
@@ -169,7 +174,8 @@ const HeroSection = () => {
                   2xl:top-[120px] 2xl:hover:top-[105px] 2xl:right-12 2xl:hover:right-10 bg-stone-600 2xl:w-[280px] 2xl:h-[420px]  2xl:hover:h-[435px]
                   xl:-top-5 xl:hover:-top-6 xl:right-24 xl:hover:right-[90px] xl:w-[240px] xl:h-[350px] xl:hover:h-[360px]
                   md:top-[30px] md:hover:top-7 md:right-36 md:hover:right-32  md:w-[190px] md:h-[270px] 
-                    rounded-[30px]  transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                  top-5 right-9 w-[80px] h-[110px]
+                  md:rounded-[30px] rounded-[12px]  transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
                   style={{ rotate: "10deg" }}
                 >
                   <ImageSecion imgSrc={heroSectionCardImg6} />
@@ -181,7 +187,7 @@ const HeroSection = () => {
       </div>
       <Image
         src={bdDownImg}
-        className=" relative w-full z-[2000] 2xl:-mt-[118px] xl:-mt-[92px] md:-mt-[102px] 2xl:px-[94px] xl:px-12 md:px-[34px]"
+        className=" relative md:block w-full z-[2000] 2xl:-mt-[118px] xl:-mt-[92px] md:-mt-[102px] -mt-[462px] 2xl:px-[94px] xl:px-12 md:px-[34px]"
         alt="bdDownImg"
       />
     </>
