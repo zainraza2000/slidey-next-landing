@@ -125,7 +125,7 @@ const IdeaSection = () => {
           </span>
         </motion.div>
         <motion.div
-          className="fontGivonic ml-[230px] bg-white xl:w-44 xl:h-[60px] md:w-40 md:h-[50px] rounded-xl flex justify-center items-center text-[#EF423A] xl:text-4xl md:text-3xl font-semibold capitalize"
+          className="fontGivonic ml-[230px] bg-white xl:w-48 xl:h-[60px] md:w-40 md:h-[50px] rounded-xl flex justify-center items-center text-[#EF423A] xl:text-4xl md:text-3xl font-semibold capitalize"
           drag
           dragConstraints={constraintsRef}
           dragElastic={0.5}
