@@ -24,7 +24,7 @@ const IdeaSection = () => {
   const dragX3 = useMotionValue(0);
 
   return (
-    <section className=" xl:w-4/5 md:w-[85%] w-[90%] flex justify-between items-center md:gap-10 xl:gap-0 mx-auto md:mb-20 mb-10 md:mt-0 mt-1">
+    <section className=" xl:w-4/5 md:w-[85%] w-[90%] flex justify-between items-center md:gap-10 xl:gap-0 mx-auto  md:mt-0 mt-1">
       <div className=" xl:w-[32%] md:w-[50%] w-[80%] flex flex-col border-b border-black md:gap-10 gap-4 xl:h-80 md:h-[350px] h-[140px]">
         <h3 className="fontGivonic xl:text-[52px] md:text-[36px] text-base font-semibold xl:leading-[60px] md:leading-[50px]">
           Awake{" "}

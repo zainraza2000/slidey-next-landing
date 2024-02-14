@@ -10,7 +10,7 @@ const ClientSection = () => {
     <section className=" xl:w-4/5 md:w-[85%] w-[90%] flex flex-col justify-between items-center md:gap-5 xl:gap-8 mx-auto">
       <h3
         className={`fontGivonic xl:text-[52px] md:text-[36px] text-base font-semibold w-full ${
-          pathname === "/" ? "block" : " hidden"
+          pathname === "/contact" ? "hidden" : " block"
         } `}
       >
         Our

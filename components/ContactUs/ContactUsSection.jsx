@@ -6,7 +6,7 @@ import contactTabletImg from "@/assets/images/contactus/contactus-img.png";
 const ContactUsSection = () => {
   return (
     <div
-      className="md:w-[80%] w-[90%] flex justify-between md:gap-10 gap-2 md:pb-20 md:pt-10 pb-12 pt-4 bgContactUs mx-auto"
+      className={`md:w-[80%] w-[90%] flex justify-between md:gap-10 gap-2 md:pb-20 md:pt-10 pb-12 md:mt-20 mt-10 pt-4 bgContactUs mx-auto`}
       id="contact"
     >
       <div className=" xl:w-[60%] md:w-[50%] w-[55%] flex flex-col md:gap-10 gap-6">
