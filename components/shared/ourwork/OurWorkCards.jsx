@@ -21,7 +21,7 @@ const OurWorkCards = ({
           <span>Recent</span>
           <Image src={downIcon} alt="downIcon" />
         </button>
-        <div className=" w-4/5 flex justify-evenly rounded-xl bg-[#ffffff0d] text-white text-lg font-semibold p-2">
+        <div className=" w-4/5 flex justify-evenly rounded-xl bg-[#ffffff0d] text-white text-lg font-normal p-2">
           {workTypes.map((item, i) => (
             <p
               className={` py-2 px-2 mb-0  cursor-pointer tracking-wider hover:text-[#86e2ff] blur-bg capitalize transition-all duration-300 ease-in-out transform-gpu ${
