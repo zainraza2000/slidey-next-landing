@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import { ourWorksData } from "@/data";
+
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 
 import workCardIcon1 from "@/assets/svgs/workCard-icon-1.svg";
 import workCardIcon2 from "@/assets/svgs/workCard-icon-2.svg";
+
+import { ourWorksData } from "@/data";
 
 const AllWorksType = () => {
   const settings = {
@@ -105,7 +107,7 @@ const AllWorksType = () => {
                   alt="craftImg1"
                 />
                 <div class="allwork-hover-div">
-                  <p className=" text-[22px] font-semibold">{item.title}</p>
+                  <p className=" text-[20px] font-normal">{item.title}</p>
                   <div className=" flex gap-2">
                     <Image src={workCardIcon1} alt="workCardIcon1" />
                     <Image src={workCardIcon2} alt="workCardIcon2" />

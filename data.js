@@ -6,20 +6,37 @@ import pitchDeckThumbnail4 from "@/assets/images/our-work/pitch-dekh/pitch-thumb
 import pitchDeckThumbnail5 from "@/assets/images/our-work/pitch-dekh/pitch-thumbnail-5.png";
 import pitchDeckThumbnail6 from "@/assets/images/our-work/pitch-dekh/pitch-thumbnail-6.png";
 import pitchDeckThumbnail7 from "@/assets/images/our-work/pitch-dekh/pitch-thumbnail-7.png";
+import pitchDeckThumbnail8 from "@/assets/images/our-work/pitch-dekh/pitch-thumbnail-8.png";
+import pitchDeckThumbnail9 from "@/assets/images/our-work/pitch-dekh/pitch-thumbnail-9.png";
 
 // PRESENTATION
 import presentationThumbnail1 from "@/assets/images/our-work/presentation/presentation-thumbnail-1.png";
+import presentationThumbnail2 from "@/assets/images/our-work/presentation/presentation-thumbnail-2.png";
+import presentationThumbnail3 from "@/assets/images/our-work/presentation/presentation-thumbnail-3.png";
+import presentationThumbnail4 from "@/assets/images/our-work/presentation/presentation-thumbnail-4.png";
+import presentationThumbnail5 from "@/assets/images/our-work/presentation/presentation-thumbnail-5.png";
 
 // SPONSERSHIP
 import sponsershipThumbnail1 from "@/assets/images/our-work/sponsership/sponsership-thumbnail-1.png";
+import sponsershipThumbnail2 from "@/assets/images/our-work/sponsership/sponsership-thumbnail-2.png";
+import sponsershipThumbnail3 from "@/assets/images/our-work/sponsership/sponsership-thumbnail-3.png";
+import sponsershipThumbnail4 from "@/assets/images/our-work/sponsership/sponsership-thumbnail-4.png";
 
 // BRANDING
 import brandingThumbnail1 from "@/assets/images/our-work/branding/branding-thumbnail-1.png";
 import brandingThumbnail2 from "@/assets/images/our-work/branding/branding-thumbnail-2.png";
 import brandingThumbnail3 from "@/assets/images/our-work/branding/branding-thumbnail-3.png";
+import brandingThumbnail4 from "@/assets/images/our-work/branding/branding-thumbnail-4.png";
+import brandingThumbnail5 from "@/assets/images/our-work/branding/branding-thumbnail-5.png";
+import brandingThumbnail6 from "@/assets/images/our-work/branding/branding-thumbnail-6.png";
 
 // WEBSITE
 import websiteThumbnail1 from "@/assets/images/our-work/website/website-thumbnail-1.png";
+import websiteThumbnail2 from "@/assets/images/our-work/website/website-thumbnail-2.png";
+import websiteThumbnail3 from "@/assets/images/our-work/website/website-thumbnail-3.png";
+import websiteThumbnail5 from "@/assets/images/our-work/website/website-thumbnail-5.png";
+import websiteThumbnail6 from "@/assets/images/our-work/website/website-thumbnail-6.png";
+import websiteThumbnail9 from "@/assets/images/our-work/website/website-thumbnail-9.png";
 
 // CRAFT
 import craftImg1 from "@/assets/images/craft/craft-img-1.png";
@@ -68,84 +85,160 @@ export const craftData = [
   },
 ];
 
-
 export const ourWorksData = [
+  // PITCH DECK
   {
     title: "Gamerx",
     thumbnailSrc: pitchDeckThumbnail1,
-    modalSrc: craftImg1b,
     type: 1,
   },
   {
     title: "Karbonx",
     thumbnailSrc: pitchDeckThumbnail2,
-    modalSrc: craftImg1b,
     type: 1,
   },
   {
     title: "Shepherd",
     thumbnailSrc: pitchDeckThumbnail3,
-    modalSrc: craftImg1b,
     type: 1,
   },
   {
     title: "The Immaculate",
     thumbnailSrc: pitchDeckThumbnail4,
-    modalSrc: craftImg1b,
     type: 1,
   },
   {
     title: "Burble",
     thumbnailSrc: pitchDeckThumbnail5,
-    modalSrc: craftImg1b,
     type: 1,
   },
   {
     title: "Ballers App",
     thumbnailSrc: pitchDeckThumbnail6,
-    modalSrc: craftImg1b,
     type: 1,
   },
   {
     title: "Super Path",
     thumbnailSrc: pitchDeckThumbnail7,
-    modalSrc: craftImg1b,
     type: 1,
   },
   {
-    title: "Al Hilal Elite",
+    title: "Super Path",
+    thumbnailSrc: pitchDeckThumbnail8,
+    type: 1,
+  },
+  {
+    title: "Super Path",
+    thumbnailSrc: pitchDeckThumbnail9,
+    type: 1,
+  },
+  // PRESENTATION
+  {
+    title: "Elevator",
     thumbnailSrc: presentationThumbnail1,
-    modalSrc: craftImg1b,
     type: 2,
   },
   {
+    title: "SKALE",
+    thumbnailSrc: presentationThumbnail2,
+    type: 2,
+  },
+  {
+    title: "piqsol",
+    thumbnailSrc: presentationThumbnail3,
+    type: 2,
+  },
+  {
+    title: "JUV",
+    thumbnailSrc: presentationThumbnail4,
+    type: 2,
+  },
+  {
+    title: "PromptFi",
+    thumbnailSrc: presentationThumbnail5,
+    type: 2,
+  },
+  // SPONSERSHIP
+  {
     title: "Al Hilal Elite",
     thumbnailSrc: sponsershipThumbnail1,
-    modalSrc: craftImg1b,
     type: 3,
   },
   {
-    title: "E3M",
+    title: "WEST HAM",
+    thumbnailSrc: sponsershipThumbnail2,
+    type: 3,
+  },
+  {
+    title: "ETIHAD",
+    thumbnailSrc: sponsershipThumbnail3,
+    type: 3,
+  },
+  {
+    title: "The Numbers",
+    thumbnailSrc: sponsershipThumbnail4,
+    type: 3,
+  },
+  // BRANDING
+  {
+    title: "logitech",
     thumbnailSrc: brandingThumbnail1,
-    modalSrc: craftImg1b,
+    type: 4,
+  },
+  {
+    title: "E3M",
+    thumbnailSrc: brandingThumbnail2,
     type: 4,
   },
   {
     title: "Fin Opsly",
-    thumbnailSrc: brandingThumbnail2,
-    modalSrc: craftImg1b,
+    thumbnailSrc: brandingThumbnail3,
     type: 4,
   },
   {
     title: "m2 Advisors",
-    thumbnailSrc: brandingThumbnail3,
-    modalSrc: craftImg1b,
+    thumbnailSrc: brandingThumbnail4,
     type: 4,
   },
   {
+    title: "pl by SPL",
+    thumbnailSrc: brandingThumbnail5,
+    type: 4,
+  },
+  {
+    title: "Digify",
+    thumbnailSrc: brandingThumbnail6,
+    type: 4,
+  },
+  // WEBSITE
+  {
     title: "EnDasmu",
     thumbnailSrc: websiteThumbnail1,
-    modalSrc: craftImg1b,
+    type: 5,
+  },
+  {
+    title: "FinOpsly",
+    thumbnailSrc: websiteThumbnail2,
+    type: 5,
+  },
+  {
+    title: "Success Play",
+    thumbnailSrc: websiteThumbnail3,
+    type: 5,
+  },
+  {
+    title: "LOEWEN",
+    thumbnailSrc: websiteThumbnail5,
+    type: 5,
+  },
+  {
+    title: "Securify",
+    thumbnailSrc: websiteThumbnail6,
+    type: 5,
+  },
+  {
+    title: "Codi",
+    thumbnailSrc: websiteThumbnail9,
     type: 5,
   },
 ];
@@ -155,7 +248,7 @@ export const pricingData = [
     id: 1,
     heading: "Design Only",
     timeline: "timeline",
-    price:'$499',
+    price: "$499",
     features: [
       "15 - 20 Slides",
       "Visual Storytelling",
@@ -168,7 +261,7 @@ export const pricingData = [
     id: 2,
     heading: "Design & Copywriting",
     timeline: "timeline",
-    price:'$899',
+    price: "$899",
     features: [
       "15 - 20 Slides",
       "Copywriting",
@@ -183,7 +276,7 @@ export const pricingData = [
     id: 3,
     heading: "Startup Strategy",
     timeline: "timeline",
-    price:'$2000',
+    price: "$2000",
     features: [
       "Introductory Call",
       "Logo Design",

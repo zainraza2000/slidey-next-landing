@@ -1,21 +1,47 @@
 "use client";
 import Image from "next/image";
 import React, { useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+
+// ICONS
 import icon1 from "@/assets/svgs/craft-icon-1.svg";
 import icon2 from "@/assets/svgs/craft-icon-2.svg";
-import downIcon from "@/assets/svgs/recent-down.svg";
-import craftArrowIcon from "@/assets/svgs/craft-arrow.svg";
-import workCardIcon1 from "@/assets/svgs/workCard-icon-1.svg";
-import workCardIcon2 from "@/assets/svgs/workCard-icon-2.svg";
 
-import { craftData } from "@/data";
+// COMPONENTS
 import ImageModal from "../shared/ImageModal";
+import CraftCards from "../shared/craft/CraftCards";
+import OurWorkCards from "../shared/ourwork/OurWorkCards";
+
+// DATA
+import { craftData, ourWorksData } from "@/data";
+
+const workTypes = [
+  "all",
+  "Pitch Decks",
+  "Presentation",
+  "Sponsorship Proposals",
+  "Branding",
+  "Web Designs",
+];
 
 const CraftSection = () => {
+  const pathname = usePathname();
+
+  // CRAFT LANDING PAGE FUNTIONAILITY
   const [currentImg, setCurrentImg] = useState();
-  
   const [open, setOpen] = useState(false);
   const cancelButtonRef = useRef(null);
+
+  // OUR WORK FUNTIONAILITY
+  const [selectedWorkType, setSelectedWorkType] = useState(0);
+  const [currentWorkType, setCurrentWorkType] = useState(null);
+  const handleWorkType = (id) => {
+    setSelectedWorkType(id);
+    const filterWorkType = ourWorksData.filter((item) => item.type === id);
+    console.log(filterWorkType);
+    setCurrentWorkType(filterWorkType);
+  };
+
   return (
     <>
       <section className=" bg-[#0F0F16]">
@@ -33,37 +59,20 @@ const CraftSection = () => {
             <Image src={icon2} alt="icon2" className="mb-2 md:w-auto w-4" />
           </div>
           {/* Cards*/}
-          <div className=" grid grid-cols-3 md:gap-5 xl:gap-8 gap-3 md:px-0 px-5">
-            {craftData.map((item, i) => (
-              <div
-                key={i}
-                className="ourWorkTypeCard relative mx-auto cursor-pointer"
-                onClick={() => {
-                  setCurrentImg(item?.modalSrc), setOpen(true);
-                }}
-              >
-                <Image
-                  src={item?.thumbnailSrc}
-                  width={350}
-                  height={350}
-                  alt="craftImg1"
-                  className=" xl:w-[350px] xl:h-[350px] md:w-[320px] md:h-[240px]"
-                />
-                <div class="hover-div">
-                  <p className=" text-[22px] font-semibold">{item.title}</p>
-                  <div className=" flex gap-2">
-                    <Image src={workCardIcon1} alt="workCardIcon1" />
-                    <Image src={workCardIcon2} alt="workCardIcon2" />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          {/* View All */}
-          {/* <button className=" flex items-center justify-center gap-3 w-fit bg-[#86e2ff] rounded-3xl px-5 py-2 mx-auto">
-            <span>View All</span>
-            <Image src={craftArrowIcon} alt="downIcon" />
-          </button> */}
+          {pathname === "/pitchdeck" ? (
+            <CraftCards
+              craftData={craftData}
+              setCurrentImg={setCurrentImg}
+              setOpen={setOpen}
+            />
+          ) : (
+            <OurWorkCards
+              workTypes={workTypes}
+              selectedWorkType={selectedWorkType}
+              currentWorkType={currentWorkType}
+              handleWorkType={handleWorkType}
+            />
+          )}
         </div>
       </section>
       <ImageModal

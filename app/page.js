@@ -11,7 +11,6 @@ import ClientSection from "@/components/client/ClientSection";
 import PricingSection from "@/components/pricing/PricingSection";
 import ContactUsSection from "@/components/ContactUs/ContactUsSection";
 import TwakToComponent from "@/components/shared/TwakToComponent";
-import OurWorkSection from "@/components/OurWork/OurWorkSection";
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
       <ClientSection />
       <RankingSection />
       <StorylineSection />
-      {/* <OurWorkSection /> */}
       <ProvenSection />
       <CraftSection />
       <TestimonialSection />
