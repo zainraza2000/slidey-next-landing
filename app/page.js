@@ -25,9 +25,9 @@ export default function Home() {
       <ProvenSection />
       {/* <CraftSection /> */}
       {/* <TestimonialSection /> */}
-      {/* <PricingSection /> */}
+      <PricingSection />
       <FAQ />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

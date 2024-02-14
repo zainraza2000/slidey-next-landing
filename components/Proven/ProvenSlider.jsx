@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick-theme.css";
 const ProvenSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const settings = {
+    arrow:false,
     dots: true,
     infinite: true,
     slidesToShow: 1,
@@ -25,7 +26,7 @@ const ProvenSlider = () => {
   };
   return (
     <Slider {...settings} className="  w-full">
-      <div className=" slide md:px-8 px-4">
+      <div className=" slide md:px-8 px-0">
         <div className=" w-full flex md:gap-2 gap-0 justify-between items-center">
           <div className=" w-[40%] flex flex-col justify-center 2xl:gap-7 xl:gap-4 md:gap-2 gap-1 md:mt-0 mt-3">
             <p className="fontGivonic text-[#000000] 2xl:text-[40px] xl:text-[28px] md:text-xl text-sm font-semibold md:leading-10 leading-4">
@@ -55,7 +56,7 @@ const ProvenSlider = () => {
           </div>
         </div>
       </div>
-      <div className=" slide md:px-8 px-4">
+      <div className=" slide md:px-8 px-0">
         <div className=" w-full flex gap-2 justify-between items-center">
           <div className=" w-[40%] flex flex-col justify-center 2xl:gap-7 xl:gap-4 md:gap-2 gap-1 md:mt-0 mt-3">
             <p className="fontGivonic text-[#000000] 2xl:text-[40px] xl:text-[28px] md:text-xl text-sm font-semibold md:leading-10 leading-4">
