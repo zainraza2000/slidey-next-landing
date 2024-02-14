@@ -81,7 +81,7 @@ const TestimonialSection = () => {
   }, []);
 
   return (
-    <section className=" relative bg-testinomial xl:w-4/5 md:w-[85%] w-[90%] flex flex-col justify-between items-center md:gap-8 xl:gap-8 mx-auto md:pt-24 pt-14">
+    <section className=" relative bg-testinomial xl:w-4/5 md:w-[85%] w-[90%] flex flex-col justify-between items-center md:gap-8 xl:gap-8 gap-4 mx-auto md:pt-24 pt-12">
       <h3 className="fontGivonic xl:text-[52px] md:text-[36px] text-base font-semibold xl:leading-[60px] md:leading-[50px] xl:ml-0 md:ml-5 w-full">
         Client
         <span className=" pt-2 px-[10px] md:pb-0 pb-1 bg-[#86e2ff] text-black rounded-lg mx-3">
@@ -89,7 +89,7 @@ const TestimonialSection = () => {
         </span>
       </h3>
       {/* Cards */}
-      <div className=" flex gap-6">
+      <div className=" flex md:gap-6 gap-3">
         {/* Card */}
         {substate.map((sub, i) => (
           <TestimonialCard
@@ -110,11 +110,11 @@ const TestimonialSection = () => {
         ))}
       </div>
       <button
-        className=" absolute xl:bottom-[30%] md:bottom-[27%] 2xl:right-48 xl:right-16 md:right-24"
+        className=" absolute xl:bottom-[30%] md:bottom-[27%] bottom-14 2xl:right-48 xl:right-16 md:right-24 right-8"
         onClick={handleSlider}
         disabled={transitioning}
       >
-        <Image src={nextArrow} alt="nextArrow" className=" xl:w-[105px] md:w-[70px]"/>
+        <Image src={nextArrow} alt="nextArrow" className=" xl:w-[105px] md:w-[70px] w-8"/>
       </button>
     </section>
   );

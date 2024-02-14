@@ -24,7 +24,7 @@ export default function Home() {
       <StorylineSection />
       <ProvenSection />
       <CraftSection />
-      {/* <TestimonialSection /> */}
+      <TestimonialSection />
       <PricingSection />
       <FAQ />
       <Footer />
