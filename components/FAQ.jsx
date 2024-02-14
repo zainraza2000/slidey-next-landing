@@ -63,7 +63,7 @@ const FAQ = () => {
   };
   return (
     <>
-      <div className="fontGivonic mx-auto md:mb-28 mb-14  w-4/5 flex flex-col md:gap-10 gap-8">
+      <div className="fontGivonic mx-auto md:mb-28 mb-14 md:mt-14 mt-7  w-4/5 flex flex-col md:gap-10 gap-8">
         {/* FAQ */}
         <h3 className="fontGivonic xl:text-[52px] md:text-[36px] text-base font-semibold xl:leading-[60px] md:leading-[50px] w-full">
           Frequently Asked

@@ -1,14 +1,22 @@
 "use client";
 import { pricingData } from "@/data";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 
 const PricingSection = () => {
+  const pathname = usePathname();
   const scrollToAbout = () => {
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <section className=" bg-pricing xl:w-4/5 md:w-[90%] w-full md:px-0 px-5 flex flex-col justify-between md:gap-5 xl:gap-8 mx-auto md:py-28 py-14">
+    <section
+      className={`${
+        pathname === "/pitchdeck"
+          ? "bg-pricing xl:w-4/5 md:w-[90%] w-full md:px-0 px-5 flex flex-col justify-between md:gap-5 xl:gap-8 mx-auto md:py-14 py-7"
+          : "hidden"
+      } `}
+    >
       <h3 className="fontGivonic xl:text-[52px] md:text-[36px] text-base font-semibold xl:leading-[60px] md:leading-[50px] xl:ml-0 md:ml-8 capitalize w-fit">
         pricing
         <span className=" pt-2 px-[10px] md:pb-0 pb-1 bg-[#86e2ff] text-black capitalize rounded-lg mx-3">
@@ -29,7 +37,9 @@ const PricingSection = () => {
               className={` pricingCard-${
                 item.id
               } flex flex-col xl:gap-3 md:gap-1 ${
-                item.id === 2 ? "justify-end md:py-4 pt-7 pb-1" : " justify-start md:py-8 pt-7 pb-1"
+                item.id === 2
+                  ? "justify-end md:py-4 pt-7 pb-1"
+                  : " justify-start md:py-8 pt-7 pb-1"
               } w-full md:rounded-[30px] rounded-lg xl:h-64 md:h-[200px] md:px-6 px-2`}
             >
               <span className=" fontGivonic 2xl:text-4xl xl:text-4xl md:text-3xl text-xs text-white font-semibold tracking-wider">
@@ -53,7 +63,9 @@ const PricingSection = () => {
                   className=" flex md:justify-center justify-start mx-auto items-center md:gap-3 gap-1"
                 >
                   <FiCheckCircle className=" md:text-lg text-[10px]" />
-                  <p className=" md:text-base text-[7px] font-semibold ">{feature}</p>
+                  <p className=" md:text-base text-[7px] font-semibold ">
+                    {feature}
+                  </p>
                 </div>
               ))}
             </div>

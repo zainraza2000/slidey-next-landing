@@ -68,7 +68,7 @@ const StorylineSection = () => {
         <Image
           src={brandingImg}
           alt="brandingImg"
-          className=" md:rounded-[20px] rounded-md xl:h-[310px] h-full md:h-[230px] w-full"
+          className=" md:rounded-[20px] rounded-md xl:h-[310px] h-[96px] md:h-[230px] w-full"
         />
         <div className="2xl:col-span-3 md:col-span-2 col-span-2 flex xl:gap-6 md:gap-3 gap-1 bg-white md:rounded-[30px] rounded-lg 2xl:p-8 md:p-5 py-2 px-2 xl:h-full md:h-[230px]">
           <div className=" flex flex-col 2xl:gap-6 xl:gap-4 md:gap-2">

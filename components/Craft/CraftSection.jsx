@@ -32,11 +32,6 @@ const CraftSection = () => {
             </h3>
             <Image src={icon2} alt="icon2" className="mb-2 md:w-auto w-4" />
           </div>
-          {/* Recent */}
-          {/* <button className=" flex items-center justify-center gap-3 w-fit text-white border border-[#fff] rounded-3xl px-5 py-2">
-            <span>Recent</span>
-            <Image src={downIcon} alt="downIcon" />
-          </button> */}
           {/* Cards*/}
           <div className=" grid grid-cols-3 md:gap-5 xl:gap-8 gap-3 md:px-0 px-5">
             {craftData.map((item, i) => (

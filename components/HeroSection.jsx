@@ -187,7 +187,7 @@ const HeroSection = () => {
       </div>
       <Image
         src={bdDownImg}
-        className=" relative md:block w-full z-[2000] 2xl:-mt-[152px] xl:-mt-[112px] md:-mt-[102px] -mt-[460px] 2xl:px-[94px] xl:px-[46px] md:px-0"
+        className=" relative md:block w-full z-[2000] 2xl:-mt-[152px] xl:-mt-[112px] md:-mt-[102px] -mt-[460px] 2xl:px-0 xl:px-[46px] md:px-0"
         alt="bdDownImg"
       />
     </>
