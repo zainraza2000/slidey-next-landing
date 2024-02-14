@@ -19,18 +19,18 @@ const CraftSection = () => {
   return (
     <>
       <section className=" bg-[#0F0F16]">
-        <div className="xl:w-4/5 md:w-[85%] flex flex-col justify-between xl:gap-16 md:gap-12 mx-auto xl:py-28 md:py-20">
+        <div className="xl:w-4/5 md:w-[85%] flex flex-col justify-between xl:gap-16 md:gap-12 gap-5 mx-auto xl:py-28 md:py-20 py-10">
           {/* Heading */}
-          <div className="flex items-center justify-center gap-4">
-            <Image src={icon1} alt="icon1" className="mb-2" />
-            <h3 className="fontGivonic xl:text-[52px] md:text-[36px] font-semibold xl:leading-[60px] md:leading-[50px] md:tracking-wide xl:tracking-normal text-white">
+          <div className="flex items-center justify-center md:gap-4 gap-3">
+            <Image src={icon1} alt="icon1" className="mb-2 md:w-auto w-10" />
+            <h3 className="fontGivonic xl:text-[52px] md:text-[36px] text-base font-semibold xl:leading-[60px] md:leading-[50px] md:tracking-wide xl:tracking-normal text-white">
               The
-              <span className=" pt-2 px-[10px] pb-0 bg-[#86e2ff] text-black rounded-lg mx-3">
+              <span className=" pt-2 px-[10px] md:pb-0 pb-1 bg-[#86e2ff] text-black rounded-lg mx-3">
                 Slidey{" "}
               </span>{" "}
               Craft
             </h3>
-            <Image src={icon2} alt="icon2" className="mb-2" />
+            <Image src={icon2} alt="icon2" className="mb-2 md:w-auto w-4" />
           </div>
           {/* Recent */}
           {/* <button className=" flex items-center justify-center gap-3 w-fit text-white border border-[#fff] rounded-3xl px-5 py-2">
@@ -38,7 +38,7 @@ const CraftSection = () => {
             <Image src={downIcon} alt="downIcon" />
           </button> */}
           {/* Cards*/}
-          <div className=" grid grid-cols-3 md:gap-5 xl:gap-8">
+          <div className=" grid grid-cols-3 md:gap-5 xl:gap-8 gap-3 md:px-0 px-5">
             {craftData.map((item, i) => (
               <div
                 key={i}

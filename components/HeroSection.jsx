@@ -49,7 +49,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="relative flex justify-center 2xl:h-[950px] xl:h-[650px] md:h-[630px] h-screen w-full 2xl:pt-11 xl:pt-8 md:pt-6 pt-4 2xl:px-20 xl:px-16 md:px-8 px-6">
+      <div className="relative flex justify-center 2xl:h-[950px] xl:h-[650px] md:h-[630px] h-[720px] w-full 2xl:pt-11 xl:pt-8 md:pt-6 pt-4 2xl:px-20 xl:px-16 md:px-8 px-6">
         <Image
           src={mainBg}
           alt="main bg"
@@ -187,7 +187,7 @@ const HeroSection = () => {
       </div>
       <Image
         src={bdDownImg}
-        className=" relative md:block w-full z-[2000] 2xl:-mt-[152px] xl:-mt-[112px] md:-mt-[102px] -mt-[462px] 2xl:px-[94px] xl:px-[46px] md:px-0"
+        className=" relative md:block w-full z-[2000] 2xl:-mt-[152px] xl:-mt-[112px] md:-mt-[102px] -mt-[460px] 2xl:px-[94px] xl:px-[46px] md:px-0"
         alt="bdDownImg"
       />
     </>
