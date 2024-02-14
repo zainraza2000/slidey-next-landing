@@ -49,15 +49,15 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="relative flex justify-center h-screen w-full 2xl:pt-11 xl:pt-8 md:pt-6 pt-4 2xl:px-20 xl:px-16 md:px-8 px-6">
+      <div className="relative flex justify-center 2xl:h-[950px] xl:h-[650px] md:h-[630px] h-screen w-full 2xl:pt-11 xl:pt-8 md:pt-6 pt-4 2xl:px-20 xl:px-16 md:px-8 px-6">
         <Image
           src={mainBg}
           alt="main bg"
-          className=" absolute 2xl:w-[90%]  md:w-[93%] w-[90%] md:h-full h-[40%]  mx-auto "
+          className=" absolute 2xl:w-[90%]  md:w-[93%] w-[90%] md:h-[96%] h-[40%]  mx-auto "
         />
         <Image
           src={exploreImg}
-          className=" spinning-div absolute 2xl:w-[170px] xl:w-[150px] md:w-[110px] xl:-bottom-12 md:bottom-0 bottom-[59%] w-[40px] z-[2000000]"
+          className=" spinning-div absolute 2xl:w-[150px] xl:w-[130px] md:w-[110px] xl:-bottom-8 md:bottom-0 bottom-[59%] w-[40px] z-[2000000]"
           alt="explore Img"
           onClick={() => setCurrentCards((prev) => (prev === 1 ? 2 : 1))}
         />
@@ -122,7 +122,7 @@ const HeroSection = () => {
                   variants={cardsVariants}
                   className="absolute 
                   2xl:top-12 2xl:hover:top-[38px] bg-orange-400 2xl:w-[310px] 2xl:h-[470px] 2xl:hover:w-[320px] 2xl:hover:h-[480px]
-                  xl:-top-16 xl:hover:-top-[70px] xl:w-[270px] xl:h-[350px] xl:hover:w-[280px] xl:hover:h-[360px]
+                  xl:-top-14 xl:hover:-top-[62px] xl:w-[270px] xl:h-[370px] xl:hover:w-[280px] xl:hover:h-[375px]
                   md:-top-1 md:hover:-top-2 md:w-[220px] md:h-[300px] md:hover:w-[230px] md:hover:h-[310px]
                   top-1  w-[90px] h-[130px] 
                    md:rounded-[30px] rounded-[12px] transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
@@ -161,7 +161,7 @@ const HeroSection = () => {
                   variants={cardsVariants}
                   className="absolute 
                   2xl:top-12 2xl:hover:top-[38px] bg-orange-400 2xl:w-[310px] 2xl:h-[470px] 2xl:hover:w-[320px] 2xl:hover:h-[480px]
-                  xl:-top-16 xl:hover:-top-[70px] xl:w-[270px] xl:h-[350px] xl:hover:w-[280px] xl:hover:h-[360px]
+                  xl:-top-[60px] xl:hover:-top-[65px] xl:w-[270px] xl:h-[350px] xl:hover:w-[280px] xl:hover:h-[360px]
                   md:-top-1 md:hover:-top-2 md:w-[220px] md:h-[300px] md:hover:w-[230px] md:hover:h-[310px]
                   top-1  w-[90px] h-[130px] 
                    md:rounded-[30px] rounded-[12px] transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
@@ -187,7 +187,7 @@ const HeroSection = () => {
       </div>
       <Image
         src={bdDownImg}
-        className=" relative md:block w-full z-[2000] 2xl:-mt-[118px] xl:-mt-[92px] md:-mt-[102px] -mt-[462px] 2xl:px-[94px] xl:px-12 md:px-[34px]"
+        className=" relative md:block w-full z-[2000] 2xl:-mt-[152px] xl:-mt-[112px] md:-mt-[102px] -mt-[462px] 2xl:px-[94px] xl:px-[46px] md:px-0"
         alt="bdDownImg"
       />
     </>

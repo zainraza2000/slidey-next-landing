@@ -23,8 +23,8 @@ export default function Home() {
       <RankingSection />
       <StorylineSection />
       <ProvenSection />
-      {/* <CraftSection /> */}
-      {/* <TestimonialSection /> */}
+      <CraftSection />
+      <TestimonialSection />
       <PricingSection />
       <FAQ />
       <Footer />
