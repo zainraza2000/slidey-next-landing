@@ -72,7 +72,7 @@ const HeroSection = () => {
                 Transforming Presentations into Powerful Narratives!
               </p>
               <button
-                className=" 2xl:text-[22px] xl:text-[18px] md:text-[16px] text-[10px] font-semibold text-[#090909] bg-[#86e2ff] rounded-[50px] md:py-3 md:px-6 py-2 px-2 tracking-wider
+                className=" 2xl:text-[22px] xl:text-[18px] md:text-[16px] text-[10px] md:font-semibold font-medium text-[#090909] bg-[#86e2ff] rounded-[50px] md:py-3 md:px-6 py-2 px-2 md:tracking-wider tracking-normal
               transition-all duration-300 ease-in-out transform-gpu hover:scale-105"
                 onClick={scrollToAbout}
               >

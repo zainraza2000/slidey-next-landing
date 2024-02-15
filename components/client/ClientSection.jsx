@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const ClientSection = () => {
   const pathname = usePathname();
   return (
-    <section className=" xl:w-4/5 md:w-[85%] w-[90%] flex flex-col justify-between items-center md:gap-5 xl:gap-8 mx-auto">
+    <section className=" xl:w-4/5 md:w-[85%] w-[90%] flex flex-col justify-between items-center md:gap-5 xl:gap-8 mx-auto md:pt-20 pt-12">
       <h3
         className={`fontGivonic xl:text-[52px] md:text-[36px] text-base font-semibold w-full ${
           pathname === "/contact" ? "hidden" : " block"

@@ -45,7 +45,7 @@ const CraftSection = () => {
   return (
     <>
       <section className=" bg-[#0F0F16]">
-        <div className="xl:w-4/5 md:w-[85%] flex flex-col justify-between xl:gap-16 md:gap-12 gap-5 mx-auto xl:py-28 md:py-20 py-10">
+        <div className="xl:w-4/5 md:w-[85%] w-[90%] flex flex-col justify-between xl:gap-16 md:gap-12 gap-5 mx-auto xl:py-28 md:py-20 py-10">
           {/* Heading */}
           <div className="flex items-center justify-center md:gap-4 gap-3">
             <Image src={icon1} alt="icon1" className="mb-2 md:w-auto w-10" />

@@ -5,7 +5,7 @@ import slideyLogo from "@/assets/images/logo-black.png";
 
 const Layout = ({ children }) => {
   return (
-    <main className="mt-16">
+    <main className="md:mt-16 mt-10">
       <div className="w-[80%] mx-auto ">
         <Navbar logo={slideyLogo} />
       </div>

@@ -1,12 +1,19 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 
 import contactTabletImg from "@/assets/images/contactus/contactus-img.png";
+import { usePathname } from "next/navigation";
 
 const ContactUsSection = () => {
+  const pathname = usePathname()
   return (
     <div
-      className={`md:w-[80%] w-[90%] flex justify-between md:gap-10 gap-2 md:pb-20 md:pt-10 pb-12 md:mt-20 mt-10 pt-4 bgContactUs mx-auto`}
+      className={`${
+        pathname === "/pitchdeck"
+          ? "md:w-[80%] w-[90%] flex justify-between md:gap-10 gap-2 md:pt-10 md:mt-20 mt-10 pt-4 bgContactUs mx-auto"
+          : "hidden"
+      } `}
       id="contact"
     >
       <div className=" xl:w-[60%] md:w-[50%] w-[55%] flex flex-col md:gap-10 gap-6">

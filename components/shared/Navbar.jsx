@@ -31,15 +31,17 @@ const Navbar = ({ logo, scrollToAbout }) => {
           </Link>
         ) : (
           <>
-            <Link href={"/"}>Home</Link>
-            <Link href={"/"}>Our Capabilities</Link>
-            <Link href={"/ourwork"}>Our Work</Link>
-            <Link href={"/"}>Blog</Link>
+            <Link href={"/"} className="md:text-base text-[10px]">
+              Home
+            </Link>
+            <Link href={"/ourwork"} className="md:text-base text-[10px]">
+              Our Work
+            </Link>
           </>
         )}
         {pathname === "/pitchdeck" ? (
           <button
-            className=" bg-[#191922] md:text-base text-xs rounded-lg  text-white md:rounded-[20px] md:pt-2 md:pb-3 md:px-6 px-2 py-2 "
+            className=" bg-[#191922] md:text-base text-[10px] rounded-lg  text-white md:rounded-[20px] md:pt-2 md:pb-3 md:px-6 px-2 py-1 "
             onClick={scrollToAbout}
           >
             Contact Us
@@ -47,7 +49,7 @@ const Navbar = ({ logo, scrollToAbout }) => {
         ) : (
           <Link
             href={"/contactus"}
-            className=" bg-[#191922] md:text-base text-xs rounded-lg  text-white md:rounded-[20px] md:pt-2 md:pb-3 md:px-6 px-2 py-2 "
+            className=" bg-[#191922] md:text-base text-[10px] rounded-lg  text-white md:rounded-[20px] md:pt-2 md:pb-3 md:px-6 px-2 py-1 "
           >
             Contact Us
           </Link>

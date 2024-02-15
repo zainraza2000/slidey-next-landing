@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React from "react";
 import footerImg from "@/assets/images/footer-img.png";
@@ -15,7 +15,7 @@ import Link from "next/link";
 
 const Footer = () => {
   const scrollToAbout = () => {
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   };
   return (
     <section className="w-full bg-[#0F0F16] mt-20">
@@ -26,34 +26,43 @@ const Footer = () => {
               Create Your Story With Us!
             </p>
             <button
-              className=" xl:text-[22px] md:text-[18px] font-semibold text-[#090909] bg-[#86E2FF] md:rounded-[15px] rounded-lg py-3 xl:px-6 md:px-4 tracking-wider
+              className=" xl:text-[22px] md:text-[18px] text-sm md:font-semibold font-medium text-[#090909] bg-[#86E2FF] md:rounded-[15px] rounded-lg py-3 xl:px-6 md:px-4 md:tracking-wider tracking-normal
             transition-all duration-300 ease-in-out transform-gpu hover:scale-105"
-            onClick={scrollToAbout}
+              onClick={scrollToAbout}
             >
               Claim Your Free Slide
             </button>
-            
           </div>
           <div className=" flex md:col-span-2">
             <div className=" flex-1 flex flex-col md:gap-6 gap-2 capitalize">
               <h3 className=" md:text-lg text-base text-[#fff] mb-0">Home</h3>
               <p className=" md:text-sm text-xs text-[#9F9F9F]">Services</p>
               <p className="md:text-sm text-xs text-[#9F9F9F]">Our Vison</p>
-              <p className="md:text-sm text-xs text-[#9F9F9F]">Privicy Policy</p>
+              <p className="md:text-sm text-xs text-[#9F9F9F]">
+                Privicy Policy
+              </p>
             </div>
             <div className=" flex-1 flex flex-col md:gap-6 gap-2 capitalize">
-              <h3 className=" md:text-lg text-base text-[#fff] mb-0">Find Jobs</h3>
+              <h3 className=" md:text-lg text-base text-[#fff] mb-0">
+                Find Jobs
+              </h3>
               <p className="md:text-sm text-xs text-[#9F9F9F]">Careers</p>
             </div>
             <div className=" flex-1 flex flex-col justify-start md:gap-6 gap-2 capitalize">
-              <h3 className=" md:text-lg text-base text-[#fff] mb-0">About Slidey</h3>
+              <h3 className=" md:text-lg text-base text-[#fff] mb-0">
+                About Slidey
+              </h3>
               <div className=" flex justify-start items-center gap-2">
                 <TbMail className=" md:text-[28px] text-base text-[#9F9F9F]" />
-                <p className="md:text-sm text-xs text-[#9F9F9F]">info@slideyllc.com</p>
+                <p className="md:text-sm text-xs text-[#9F9F9F]">
+                  info@slideyllc.com
+                </p>
               </div>
               <div className=" flex justify-start items-center gap-2">
                 <HiOutlinePhone className=" md:text-[28px] text-base text-[#9F9F9F]" />
-                <p className="md:text-sm text-xs text-[#9F9F9F]">+1(786)785-2112</p>
+                <p className="md:text-sm text-xs text-[#9F9F9F]">
+                  +1(786)785-2112
+                </p>
               </div>
               <div className=" flex justify-start items-center gap-2">
                 <SlLocationPin className=" md:text-[36px] text-4xl text-[#9F9F9F]" />
@@ -95,12 +104,31 @@ const Footer = () => {
             </div>
           </div>
           <div className="md:col-span-2 flex  items-center gap-8">
-            <Image src={topDesignImg} width={105} height={99} className=" xl:w-[105px] xl:h-[99px] md:w-[80px] md:h-[70px] w-16" />
-            <Image src={clutchImg} width={135} height={39} className=" xl:w-[135px] xl:h-[39px] md:w-[90px] md:h-[20px] w-16" />
-            <Image src={trustPilotImg}  width={172} height={82} className=" xl:w-[172px] xl:h-[82px] md:w-[120px] md:h-[50px] w-20"/>
+            <Image
+              src={topDesignImg}
+              width={105}
+              height={99}
+              className=" xl:w-[105px] xl:h-[99px] md:w-[80px] md:h-[70px] w-16"
+            />
+            <Image
+              src={clutchImg}
+              width={135}
+              height={39}
+              className=" xl:w-[135px] xl:h-[39px] md:w-[90px] md:h-[20px] w-16"
+            />
+            <Image
+              src={trustPilotImg}
+              width={172}
+              height={82}
+              className=" xl:w-[172px] xl:h-[82px] md:w-[120px] md:h-[50px] w-20"
+            />
           </div>
         </div>
-        <Image src={footerImg} alt="footerImg" className="2xl:h-[300px] md:h-[250px]" />
+        <Image
+          src={footerImg}
+          alt="footerImg"
+          className="2xl:h-[300px] md:h-[250px]"
+        />
       </div>
     </section>
   );

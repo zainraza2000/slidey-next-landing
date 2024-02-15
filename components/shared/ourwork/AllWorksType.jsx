@@ -40,14 +40,17 @@ const AllWorksType = () => {
   return (
     <>
       {/*  Pitch Deck Design */}
-      <h3 className=" text-[28px] text-white font-semibold capitalize">
+      <h3 className=" xl:text-[28px] md:text-xl text-sm text-white font-semibold capitalize">
         Pitch Deck Design
       </h3>
-      <Slider {...settings}>
+      <Slider {...settings} className="">
         {ourWorksData.map(
           (item, i) =>
             item.type === 1 && (
-              <div key={i} className="slide ourWorkTypeCard relative mx-auto cursor-pointer">
+              <div
+                key={i}
+                className="slide ourWorkTypeCard relative mx-auto cursor-pointer px-2"
+              >
                 <Image
                   src={item.thumbnailSrc}
                   width={350}
@@ -66,14 +69,17 @@ const AllWorksType = () => {
         )}
       </Slider>
       {/*  Presentation Design */}
-      <h3 className=" text-[28px] text-white font-semibold">
+      <h3 className="  xl:text-[28px] md:text-xl text-sm text-white font-semibold capitalize">
         Presentation Design
       </h3>
       <Slider {...settings}>
         {ourWorksData.map(
           (item, i) =>
             item.type === 2 && (
-              <div key={i} className="slide ourWorkTypeCard relative mx-auto cursor-pointer">
+              <div
+                key={i}
+                className="slide ourWorkTypeCard relative mx-auto cursor-pointer px-2"
+              >
                 <Image
                   src={item.thumbnailSrc}
                   width={350}
@@ -92,14 +98,17 @@ const AllWorksType = () => {
         )}
       </Slider>
       {/*  Sponsorship Design */}
-      <h3 className=" text-[28px] text-white font-semibold">
+      <h3 className="  xl:text-[28px] md:text-xl text-sm text-white font-semibold capitalize">
         Sponsorship Design
       </h3>
       <Slider {...settings}>
         {ourWorksData.map(
           (item, i) =>
             item.type === 3 && (
-              <div key={i} className="slide ourWorkTypeCard relative mx-auto cursor-pointer">
+              <div
+                key={i}
+                className="slide ourWorkTypeCard relative mx-auto cursor-pointer px-2"
+              >
                 <Image
                   src={item.thumbnailSrc}
                   width={350}
@@ -118,12 +127,17 @@ const AllWorksType = () => {
         )}
       </Slider>
       {/*  Branding Design */}
-      <h3 className=" text-[28px] text-white font-semibold">Branding Design</h3>
+      <h3 className="  xl:text-[28px] md:text-xl text-sm text-white font-semibold capitalize">
+        Branding Design
+      </h3>
       <Slider {...settings}>
         {ourWorksData.map(
           (item, i) =>
             item.type === 4 && (
-              <div key={i} className="slide ourWorkTypeCard relative mx-auto cursor-pointer">
+              <div
+                key={i}
+                className="slide ourWorkTypeCard relative mx-auto cursor-pointer px-2"
+              >
                 <Image
                   src={item.thumbnailSrc}
                   width={350}
@@ -142,12 +156,17 @@ const AllWorksType = () => {
         )}
       </Slider>
       {/*  Website Design */}
-      <h3 className=" text-[28px] text-white font-semibold">Website Design</h3>
+      <h3 className="  xl:text-[28px] md:text-xl text-sm text-white font-semibold capitalize">
+        Website Design
+      </h3>
       <Slider {...settings}>
         {ourWorksData.map(
           (item, i) =>
             item.type === 5 && (
-              <div key={i} className="slide ourWorkTypeCard relative mx-auto cursor-pointer">
+              <div
+                key={i}
+                className="slide ourWorkTypeCard relative mx-auto cursor-pointer px-2"
+              >
                 <Image
                   src={item.thumbnailSrc}
                   width={350}

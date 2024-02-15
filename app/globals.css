@@ -394,3 +394,14 @@ display: none !important;
 .ourWorkTabHeading:hover::before {
   width: 100%;
 }
+
+@media only screen and (max-width: 720px) {
+  .ourWorkTabHeading::before {
+    height: 2px;
+    bottom: -2px;
+  }
+  .ourWorkTabHeadingActive {
+    border-bottom: 2px solid #00c3ff;
+  }
+  
+}
