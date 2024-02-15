@@ -41,7 +41,7 @@ const AllWorksType = () => {
     <>
       {/*  Pitch Deck Design */}
       <h3 className=" xl:text-[28px] md:text-xl text-sm text-white font-semibold capitalize">
-        Pitch Deck Design
+        Pitch Deck Designs
       </h3>
       <Slider {...settings} className="">
         {ourWorksData.map(
@@ -70,7 +70,7 @@ const AllWorksType = () => {
       </Slider>
       {/*  Presentation Design */}
       <h3 className="  xl:text-[28px] md:text-xl text-sm text-white font-semibold capitalize">
-        Presentation Design
+        Presentation Designs
       </h3>
       <Slider {...settings}>
         {ourWorksData.map(
@@ -99,7 +99,7 @@ const AllWorksType = () => {
       </Slider>
       {/*  Sponsorship Design */}
       <h3 className="  xl:text-[28px] md:text-xl text-sm text-white font-semibold capitalize">
-        Sponsorship Design
+        Sponsorship Proposals
       </h3>
       <Slider {...settings}>
         {ourWorksData.map(
@@ -128,7 +128,7 @@ const AllWorksType = () => {
       </Slider>
       {/*  Branding Design */}
       <h3 className="  xl:text-[28px] md:text-xl text-sm text-white font-semibold capitalize">
-        Branding Design
+        Branding Designs
       </h3>
       <Slider {...settings}>
         {ourWorksData.map(
@@ -157,7 +157,7 @@ const AllWorksType = () => {
       </Slider>
       {/*  Website Design */}
       <h3 className="  xl:text-[28px] md:text-xl text-sm text-white font-semibold capitalize">
-        Website Design
+        Website Designs
       </h3>
       <Slider {...settings}>
         {ourWorksData.map(

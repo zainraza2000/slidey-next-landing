@@ -52,6 +52,16 @@ import craftImg5b from "@/assets/images/craft/craft-img-5b.png";
 import craftImg6 from "@/assets/images/craft/craft-img-6.png";
 import craftImg6b from "@/assets/images/craft/craft-img-6b.png";
 
+// CLIENT
+import clientProfile1 from "@/assets/images/testinomials/client-1.png";
+import client1Company from "@/assets/images/testinomials/client-1-company.png";
+import clientProfile2 from "@/assets/images/testinomials/client-2.png";
+import client2Company from "@/assets/images/testinomials/client-2-company.png";
+import clientProfile3 from "@/assets/images/testinomials/client-3.png";
+import client3Company from "@/assets/images/testinomials/client-3-company.png";
+import clientProfile4 from "@/assets/images/testinomials/client-4.png";
+import client4Company from "@/assets/images/testinomials/client-4-company.png";
+
 export const craftData = [
   {
     title: "Karbonx",
@@ -103,12 +113,12 @@ export const ourWorksData = [
     type: 1,
   },
   {
-    title: "The Immaculate",
+    title: "PromptFi",
     thumbnailSrc: pitchDeckThumbnail4,
     type: 1,
   },
   {
-    title: "Burble",
+    title: "Narchie",
     thumbnailSrc: pitchDeckThumbnail5,
     type: 1,
   },
@@ -123,12 +133,12 @@ export const ourWorksData = [
     type: 1,
   },
   {
-    title: "Super Path",
+    title: "Writer",
     thumbnailSrc: pitchDeckThumbnail8,
     type: 1,
   },
   {
-    title: "Super Path",
+    title: "native voice",
     thumbnailSrc: pitchDeckThumbnail9,
     type: 1,
   },
@@ -284,5 +294,48 @@ export const pricingData = [
       "Pitch Deck",
       "Visual Storytelling",
     ],
+  },
+];
+
+export const clientData = [
+  {
+    id: 1,
+    firstname: "Hamid",
+    lastname: "Kabdovand",
+    designation: "CEO, BallersApp",
+    profileImg: clientProfile1,
+    companyLogo: client1Company,
+    message:
+      "“Importance of making a great first impression and can accommodate any of your Presentation...",
+  },
+  {
+    id: 2,
+    firstname: "Ilan",
+    lastname: "Danielli",
+    designation: "CEO, BallersApp",
+    profileImg: clientProfile2,
+    companyLogo: client2Company,
+    message:
+      "“I have worked with several agencies in the past, PR firms and what not -at the same time I have worked with Slidey and…”",
+  },
+  {
+    id: 3,
+    firstname: "Jay",
+    lastname: "Gandhi",
+    designation: "CEO ESG Datapoint",
+    profileImg: clientProfile3,
+    companyLogo: client3Company,
+    message:
+      "“The Slidey team having been helping my startup team for over the last 18 months on various projects varying in difficulty and across the business departments. Their work is very important to us and is very professionally produced.",
+  },
+  {
+    id: 4,
+    firstname: "Diana",
+    lastname: "Tsai",
+    designation: "CoFounder Upwage",
+    profileImg: clientProfile4,
+    companyLogo: client4Company,
+    message:
+      "“The turnaround time for my project was unbelievable! I was initially worried about meeting the deadline, but Slidey exceeded my expectations and delivered the finished product on time and with rapid turnaround. I am beyond impressed with their efficiency and dedication.”",
   },
 ];

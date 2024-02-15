@@ -16,9 +16,9 @@ import OurWorkCards from "../shared/ourwork/OurWorkCards";
 import { craftData, ourWorksData } from "@/data";
 
 const workTypes = [
-  "all",
+  "All",
   "Pitch Decks",
-  "Presentation",
+  "Presentations",
   "Sponsorship Proposals",
   "Branding",
   "Web Designs",

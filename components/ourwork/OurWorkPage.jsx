@@ -8,9 +8,9 @@ import workCardIcon2 from "@/assets/svgs/workCard-icon-2.svg";
 import { ourWorksData } from "@/data";
 
 const workTypes = [
-  "all",
+  "All",
   "Pitch Decks",
-  "Presentation",
+  "Presentations",
   "Sponsorship Proposals",
   "Branding",
   "Web Designs",
