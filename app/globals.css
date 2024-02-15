@@ -18,25 +18,11 @@ body {
     url("../assets/Givonic-Font/Givonic\ Variable.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Antapani";
-  src: url("../assets/font-antapani/Antapani-Regular.ttf"),
-    url("../assets/font-antapani/Antapani-Thin.ttf"),
-    url("../assets/font-antapani/Antapani-Light.ttf"),
-    url("../assets/font-antapani/Antapani-Regular.woff"),
-    url("../assets/font-antapani/Antapani-Regular.eot"),
-    url("../assets/font-antapani/Antapani-Medium.ttf"),
-    url("../assets/font-antapani/Antapani-SemiBold.ttf"),
-    url("../assets/font-antapani/Antapani-Bold.ttf"), format("truetype");
-}
 
 .fontGivonic {
   font-family: "Givonic", sans-serif;
 }
 
-.fontAntapani {
-  font-family: "Antapani", sans-serif;
-}
 
 .bg-frame {
   background-image: url("../assets/images/bg-frame.png");

@@ -19,7 +19,7 @@ const Navbar = ({ logo, scrollToAbout }) => {
           pathname === "/pitchdeck"
             ? "md:items-end items-center "
             : "items-center"
-        } md:gap-10 gap-3 fontAntapani text-base font-normal`}
+        } md:gap-10 gap-3 text-base font-normal`}
       >
         {pathname === "/pitchdeck" ? (
           <Link href={"https://www.trustpilot.com/review/slideyllc.com"}>
