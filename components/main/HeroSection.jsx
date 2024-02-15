@@ -1,11 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import mainBg from "../assets/images/Vector.png";
-import exploreImg from "../assets/images/explore-img.png";
-import bdDownImg from "../assets/images/bg-down-4.png";
-import Navbar from "./shared/Navbar";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+// COMPONENTS
+import Navbar from "@/components/shared/Navbar";
+import ImageSecion from "@/components/shared/ImageHerosection";
+
+// IMAGES
 import heroSectionCardImg1 from "@/assets/images/herosection/herosection-card-1.png";
 import heroSectionCardImg2 from "@/assets/images/herosection/herosection-card-2.png";
 import heroSectionCardImg3 from "@/assets/images/herosection/herosection-card-3.png";
@@ -13,7 +15,9 @@ import heroSectionCardImg4 from "@/assets/images/herosection/herosection-card-4.
 import heroSectionCardImg5 from "@/assets/images/herosection/herosection-card-5.png";
 import heroSectionCardImg6 from "@/assets/images/herosection/herosection-card-6.png";
 import slideyLogo from "@/assets/images/logo-white.png";
-import ImageSecion from "./ImageHerosection";
+import exploreImg from "@/assets/images/explore-img.png";
+import bdDownImg from "@/assets/images/bg-down-4.png";
+import mainBg from "@/assets/images/Vector.png";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },

@@ -6,11 +6,11 @@ import contactTabletImg from "@/assets/images/contactus/contactus-img.png";
 import { usePathname } from "next/navigation";
 
 const ContactUsSection = () => {
-  const pathname = usePathname()
+  const pathname = usePathname();
   return (
     <div
       className={`${
-        pathname === "/pitchdeck"
+        pathname === "/pitchdeck" || pathname === "/contactus"
           ? "md:w-[80%] w-[90%] flex justify-between md:gap-10 gap-2 md:pt-10 md:mt-20 mt-10 pt-4 bgContactUs mx-auto"
           : "hidden"
       } `}

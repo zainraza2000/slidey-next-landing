@@ -41,7 +41,7 @@ const FaqData = [
   },
 ];
 
-const FAQ = () => {
+const FaqSection = () => {
   const [openIndexes, setOpenIndexes] = useState([
     false,
     false,
@@ -112,4 +112,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default FaqSection;
