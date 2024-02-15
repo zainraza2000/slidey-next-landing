@@ -12,8 +12,6 @@ const IdeaSection = () => {
   const [rotation1, setRotation1] = useState(15);
   const [rotation2, setRotation2] = useState(0);
   const [rotation3, setRotation3] = useState(-5);
-  const [rotation4, setRotation4] = useState(0);
-  const [rotation5, setRotation5] = useState(0);
 
   const handleRotate = (direction, setRotation) => {
     const rotateAmount = direction === "clockwise" ? 15 : -15;

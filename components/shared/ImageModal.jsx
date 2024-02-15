@@ -9,7 +9,7 @@ const ImageModal = ({ img, open, setOpen, cancelButtonRef }) => {
     <Transition.Root show={open} as={Fragment}>
       <Dialog
         as="div"
-        className="relative z-10"
+        className="relative z-[5000000]"
         initialFocus={cancelButtonRef}
         onClose={setOpen}
       >

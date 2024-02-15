@@ -34,7 +34,7 @@ const ContactUsSection = () => {
         <div className=" flex flex-col md:gap-3  gap-0 w-full">
           <label
             htmlFor="fullname"
-            className="fontGivonic xl:text-xl md:text-lg text-[8px] font-semibold tracking-[1.5px]"
+            className="fontGivonic xl:text-xl md:text-lg text-[8px] md:font-semibold font-normal md:tracking-[1.5px] tracking-normal"
           >
             Full Name
           </label>
@@ -49,7 +49,7 @@ const ContactUsSection = () => {
         <div className=" flex flex-col md:gap-3 gap-0 w-full">
           <label
             htmlFor="email"
-            className="fontGivonic xl:text-xl md:text-lg text-[8px] font-semibold tracking-[1.5px]"
+            className="fontGivonic xl:text-xl md:text-lg text-[8px] md:font-semibold font-normal md:tracking-[1.5px] tracking-normal"
           >
             Your Email
           </label>
@@ -64,7 +64,7 @@ const ContactUsSection = () => {
         <div className=" flex flex-col md:gap-3 gap-0 w-full">
           <label
             htmlFor="phone"
-            className="fontGivonic xl:text-xl md:text-lg text-[8px] font-semibold tracking-[1.5px]"
+            className="fontGivonic xl:text-xl md:text-lg text-[8px] md:font-semibold font-normal md:tracking-[1.5px] tracking-normal"
           >
             Phone Number (Optional)
           </label>
@@ -79,7 +79,7 @@ const ContactUsSection = () => {
         <div className=" flex flex-col md:gap-3 gap-0 w-full">
           <label
             htmlFor="message"
-            className="fontGivonic xl:text-xl md:text-lg text-[8px] font-semibold tracking-[1.5px]"
+            className="fontGivonic xl:text-xl md:text-lg text-[8px] md:font-semibold font-normal md:tracking-[1.5px] tracking-normal"
           >
             What's on your mind
           </label>
@@ -101,7 +101,7 @@ const ContactUsSection = () => {
             get An instant quote from our customer support or submit the form
             for more details!
           </p>
-          <button className=" contactInputShadow xl:text-xl md:text-lg text-[10px] md:font-medium font-semibold tracking-[1.5px] bg-[#86E2FF] md:py-[14px] py-[6px] px-4 md:rounded-lg rounded">
+          <button className=" contactInputShadow xl:text-xl md:text-lg text-[9px] md:font-medium font-medium md:tracking-[1.5px] tracking-normal bg-[#86E2FF] md:py-[14px] py-[6px] px-4 md:rounded-lg rounded">
             Submit
           </button>
         </div>
