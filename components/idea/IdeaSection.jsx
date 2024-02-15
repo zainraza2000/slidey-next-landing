@@ -8,6 +8,7 @@ import idea2 from "@/assets/svgs/idea-2.svg";
 
 const IdeaSection = () => {
   const constraintsRef = useRef(null);
+  const constraints2Ref = useRef(null);
 
   const [rotation1, setRotation1] = useState(15);
   const [rotation2, setRotation2] = useState(0);
@@ -153,7 +154,7 @@ const IdeaSection = () => {
       {/* MOBILE */}
       <motion.div
         className="bg-idea block md:hidden w-[50%] h-[140px] overflow-hidden"
-        ref={constraintsRef}
+        ref={constraints2Ref}
         style={{ perspective: "1000px" }}
       >
         <motion.div
@@ -177,10 +178,10 @@ const IdeaSection = () => {
           animate={{ rotate: rotation1 }}
           whileTap={{ scale: 1.1 }}
           dragTransition={{ bounceStiffness: 50, bounceDamping: 10 }}
-          style={{
-            x: dragX1,
-            rotate: dragX1,
-          }}
+          // style={{
+          //   x: dragX1,
+          //   rotate: dragX1,
+          // }}
         >
           <span
             className=" w-[20%] text-white h-full text-center"
@@ -205,10 +206,10 @@ const IdeaSection = () => {
           animate={{ rotate: rotation2 }}
           whileTap={{ scale: 1.1 }}
           dragTransition={{ bounceStiffness: 50, bounceDamping: 10 }}
-          style={{
-            x: dragX2,
-            rotate: dragX2,
-          }}
+          // style={{
+          //   x: dragX2,
+          //   rotate: dragX2,
+          // }}
         >
           <span
             className=" w-[20%] text-white h-full text-center"
@@ -233,10 +234,10 @@ const IdeaSection = () => {
           animate={{ rotate: rotation3 }}
           whileTap={{ scale: 1.1 }}
           dragTransition={{ bounceStiffness: 50, bounceDamping: 10 }}
-          style={{
-            x: dragX3,
-            rotate: dragX3,
-          }}
+          // style={{
+          //   x: dragX3,
+          //   rotate: dragX3,
+          // }}
         >
           <span
             className=" w-[20%] text-white h-full text-center"
