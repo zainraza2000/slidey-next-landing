@@ -14,7 +14,7 @@ const ClientSection = () => {
         } `}
       >
         Our
-        <span className=" pt-2 px-[10px] md:pb-0 pb-1 bg-[#86e2ff] text-black rounded-lg md:mx-3 mx-2">
+        <span className=" pt-2 px-[10px] md:pb-0 pb-1 bg-[#86e2ff] text-black rounded-lg md:mx-3 mx-1">
           Clients
         </span>
       </h3>

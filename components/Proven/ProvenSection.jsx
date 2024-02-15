@@ -9,7 +9,7 @@ const ProvenSection = () => {
     <section className=" xl:w-4/5 md:w-[90%] w-[85%] flex flex-col justify-between items-center md:gap-5 xl:gap-8 gap-3 mx-auto md:mb-28 mb-[90px]">
       <h3 className="fontGivonic xl:text-[52px] md:text-[36px] text-base font-semibold xl:leading-[60px] md:leading-[50px] w-full md:px-8 px-0">
         The
-        <span className=" pt-2 px-[10px] md:pb-0 pb-1 bg-[#86e2ff] text-black rounded-lg mx-3">
+        <span className=" pt-2 px-[10px] md:pb-0 pb-1 text-center bg-[#86e2ff] text-black rounded-lg md:mx-3 mx-1">
           Proven{" "}
         </span>{" "}
         Impact
