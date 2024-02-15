@@ -97,7 +97,7 @@ const FAQ = () => {
               </button>
               {openIndexes[i] && (
                 <p
-                  className={`md:mt-5 mt-3 xl:text-lg md:text-[15px] text-[12px] font-medium text-justify md:leading-7 leading-4 transition-all duration-300 ease-in-out ${
+                  className={`md:mt-5 mt-3 xl:text-lg md:text-[15px] text-[12px] font-normal text-justify md:leading-7 leading-4 transition-all duration-300 ease-in-out ${
                     openIndexes[i] ? "max-h-[1000px]" : "max-h-0"
                   }`}
                 >
