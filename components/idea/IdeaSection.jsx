@@ -160,7 +160,7 @@ const IdeaSection = () => {
         <motion.div
           className="fontGivonic ml-[45px] bg-white w-fit px-1 py-1 rounded flex justify-center items-center text-[#EF423A] font-semibold capitalize"
           drag
-          dragConstraints={constraintsRef}
+          dragConstraints={constraints2Ref}
           dragElastic={0.5}
           initial={{ x: 0, y: 15, rotate: 0 }}
           whileTap={{ scale: 1.1 }}
@@ -172,7 +172,7 @@ const IdeaSection = () => {
         <motion.div
           className="fontGivonic ml-[60px] w-fit bg-white  rounded flex justify-center items-center text-[#EF423A] text-xs font-semibold capitalize"
           drag
-          dragConstraints={constraintsRef}
+          dragConstraints={constraints2Ref}
           dragElastic={0.5}
           initial={{ x: 0, y: 20, rotate: 0 }}
           animate={{ rotate: rotation1 }}
@@ -200,7 +200,7 @@ const IdeaSection = () => {
         <motion.div
           className="fontGivonic ml-[45px] w-fit bg-white  rounded flex justify-center items-center text-[#EF423A] text-xs font-semibold capitalize"
           drag
-          dragConstraints={constraintsRef}
+          dragConstraints={constraints2Ref}
           dragElastic={0.5}
           initial={{ x: 0, y: 30, rotate: 0 }}
           animate={{ rotate: rotation2 }}
@@ -228,7 +228,7 @@ const IdeaSection = () => {
         <motion.div
           className="fontGivonic ml-[90px] w-fit bg-white  rounded flex justify-center items-center text-[#EF423A] text-xs font-semibold capitalize"
           drag
-          dragConstraints={constraintsRef}
+          dragConstraints={constraints2Ref}
           dragElastic={0.5}
           initial={{ x: 0, y: 40, rotate: 0 }}
           animate={{ rotate: rotation3 }}
@@ -256,7 +256,7 @@ const IdeaSection = () => {
         <motion.div
           className="fontGivonic ml-[60px] bg-white w-fit px-1 py-1 rounded flex justify-center items-center text-[#EF423A] font-semibold capitalize"
           drag
-          dragConstraints={constraintsRef}
+          dragConstraints={constraints2Ref}
           dragElastic={0.5}
           initial={{ x: 0, y: 40, rotate: 0 }}
           whileTap={{ scale: 1.1 }}

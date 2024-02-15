@@ -108,18 +108,21 @@ const Footer = () => {
               src={topDesignImg}
               width={105}
               height={99}
+              alt="topDesignImg"
               className=" xl:w-[105px] xl:h-[99px] md:w-[80px] md:h-[70px] w-16"
             />
             <Image
               src={clutchImg}
               width={135}
               height={39}
+              alt="clutchImg"
               className=" xl:w-[135px] xl:h-[39px] md:w-[90px] md:h-[20px] w-16"
             />
             <Image
               src={trustPilotImg}
               width={172}
               height={82}
+              alt="trustPilotImg"
               className=" xl:w-[172px] xl:h-[82px] md:w-[120px] md:h-[50px] w-20"
             />
           </div>

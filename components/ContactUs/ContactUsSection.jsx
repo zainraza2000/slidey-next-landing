@@ -1,12 +1,51 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 import contactTabletImg from "@/assets/images/contactus/contactus-img.png";
 import { usePathname } from "next/navigation";
 
 const ContactUsSection = () => {
   const pathname = usePathname();
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    tel: "",
+    message: "",
+    file:null
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+  const handleFileChange = (event) => {
+    setFormData({
+      ...formData,
+      file: event.target.files[0]
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      console.log("Email sent successfully", formData);
+      setFormData({
+        name: "",
+        email: "",
+        tel: "",
+        message: "",
+        file:""
+      });
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+  };
+
   return (
     <div
       className={`${
@@ -30,20 +69,25 @@ const ContactUsSection = () => {
         </p>
         <Image src={contactTabletImg} alt="contactTabletImg" className="" />
       </div>
-      <form className="xl:w-[40%] md:w-[50%] w-[45%] flex flex-col justify-start items-end xl:gap-7 md:gap-4 gap-2">
+      <form
+        className="xl:w-[40%] md:w-[50%] w-[45%] flex flex-col justify-start items-end xl:gap-7 md:gap-4 gap-2"
+        onSubmit={handleSubmit}
+      >
         <div className=" flex flex-col md:gap-3  gap-0 w-full">
           <label
-            htmlFor="fullname"
+            htmlFor="name"
             className="fontGivonic xl:text-xl md:text-lg text-[8px] md:font-semibold font-normal md:tracking-[1.5px] tracking-normal"
           >
             Full Name
           </label>
           <input
             type="text"
-            id="fullname"
-            name="fullname"
+            id="name"
+            name="name"
             required
             className=" contactInputShadow md:text-lg text-[9px]  font-medium tracking-[1.5px] bg-white xl:py-4 md:py-3 py-[5px] px-4 md:rounded-lg rounded focus:outline-none"
+            value={formData.name}
+            onChange={handleChange}
           />
         </div>
         <div className=" flex flex-col md:gap-3 gap-0 w-full">
@@ -59,21 +103,25 @@ const ContactUsSection = () => {
             name="email"
             required
             className=" contactInputShadow md:text-lg text-[9px]  font-medium tracking-[1.5px] bg-white xl:py-4 md:py-3 py-[5px] px-4 md:rounded-lg rounded focus:outline-none"
+            value={formData.email}
+            onChange={handleChange}
           />
         </div>
         <div className=" flex flex-col md:gap-3 gap-0 w-full">
           <label
-            htmlFor="phone"
+            htmlFor="tel"
             className="fontGivonic xl:text-xl md:text-lg text-[8px] md:font-semibold font-normal md:tracking-[1.5px] tracking-normal"
           >
             Phone Number (Optional)
           </label>
           <input
             type="text"
-            id="phone"
-            name="phone"
+            id="tel"
+            name="tel"
             // required
             className=" contactInputShadow md:text-lg text-[9px]  font-medium tracking-[1.5px] bg-white xl:py-4 md:py-3 py-[5px] px-4 md:rounded-lg rounded focus:outline-none"
+            value={formData.tel}
+            onChange={handleChange}
           />
         </div>
         <div className=" flex flex-col md:gap-3 gap-0 w-full">
@@ -89,12 +137,16 @@ const ContactUsSection = () => {
             name="message"
             required
             className=" contactInputShadow md:text-lg text-[9px]  font-medium tracking-[1.5px] bg-white xl:py-4 md:py-3 py-[5px] px-4 md:rounded-lg rounded focus:outline-none"
+            value={formData.message}
+            onChange={handleChange}
           />
         </div>
         <input
           name="file"
+          id="file"
           type="file"
           className=" w-full xl:text-lg md:text-base text-[8px] font-medium text-[#7A7A7A] cursor-pointer focus:outline-none"
+          onChange={handleFileChange}
         />
         <div className="flex flex-col xl:gap-8 md:gap-5 gap-2 w-full xl:mt-4 md:mt-2">
           <p className="fontGivonic xl:text-xl md:text-[15px] text-[6px] font-medium capitalize">

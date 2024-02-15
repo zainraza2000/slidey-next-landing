@@ -69,7 +69,7 @@ const OurWorkPage = () => {
                   height={350}
                   alt="craftImg1"
                 />
-                <div class="hover-div">
+                <div className="hover-div">
                   <p className=" text-[20px] font-normal">{item?.title}</p>
                   <div className=" flex gap-2">
                     <Image src={workCardIcon1} alt="workCardIcon1" />
@@ -92,7 +92,7 @@ const OurWorkPage = () => {
                   height={350}
                   alt="craftImg1"
                 />
-                <div class="hover-div">
+                <div className="hover-div">
                   <p className=" text-[20px] font-normal">{item?.title}</p>
                   <div className=" flex gap-2">
                     <Image src={workCardIcon1} alt="workCardIcon1" />

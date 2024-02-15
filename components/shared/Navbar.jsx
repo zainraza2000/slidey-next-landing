@@ -25,6 +25,7 @@ const Navbar = ({ logo, scrollToAbout }) => {
           <Link href={"https://www.trustpilot.com/review/slideyllc.com"}>
             <Image
               src={trustPilotImage}
+              alt="trustPilotImage"
               width={120}
               className=" md:w-[120px] w-14"
             />
