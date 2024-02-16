@@ -4,6 +4,7 @@ import React, { useState } from "react";
 
 import contactTabletImg from "@/assets/images/contactus/contactus-img.png";
 import { usePathname } from "next/navigation";
+import axios from "axios";
 
 const ContactUsSection = () => {
   const pathname = usePathname();
@@ -13,7 +14,7 @@ const ContactUsSection = () => {
     email: "",
     tel: "",
     message: "",
-    file:null
+    file: null,
   });
 
   const handleChange = (e) => {
@@ -26,21 +27,35 @@ const ContactUsSection = () => {
   const handleFileChange = (event) => {
     setFormData({
       ...formData,
-      file: event.target.files[0]
+      file: event.target.files[0],
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const backendFormData = new FormData();
+    backendFormData.append("name", formData.name);
+    backendFormData.append("email", formData.email);
+    backendFormData.append("tel", formData.tel);
+    backendFormData.append("message", formData.message);
+    // Append file only if it's not null
+    if (formData.file !== null) {
+      backendFormData.append("file", formData.file);
+    }
+
     try {
-      console.log("Email sent successfully", formData);
-      setFormData({
-        name: "",
-        email: "",
-        tel: "",
-        message: "",
-        file:""
-      });
+      console.log(formData);
+      const res = await axios.post(
+        `http://localhost:3000/api/send-email`,
+        backendFormData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      console.log(res);
     } catch (error) {
       console.error("Error sending email:", error);
     }

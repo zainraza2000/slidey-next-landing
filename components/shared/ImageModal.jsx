@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 
 import { Dialog, Transition } from "@headlessui/react";
 
-const ImageModal = ({ img, open, setOpen, cancelButtonRef }) => {
+const ImageModal = ({ img, open, setOpen, cancelButtonRef, customClass }) => {
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog
@@ -36,16 +36,18 @@ const ImageModal = ({ img, open, setOpen, cancelButtonRef }) => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all 2xl:w-[40vw] xl:w-[60vw] md:w-[70vw]">
+              <Dialog.Panel
+                className={`relative transform overflow-hidden  bg-white text-left shadow-xl transition-all ${customClass}`}
+              >
                 <div class="relative p-0">
                   <IoClose
-                    className="absolute text-[35px] text-[#7A7A7A] right-3 top-4 cursor-pointer"
+                    className="absolute md:text-[35px] text-xl text-[#7A7A7A] right-3 top-4 cursor-pointer"
                     onClick={() => setOpen(false)}
                   />
                   <Image
                     src={img}
                     alt="img"
-                    className=" rounded-lg w-full h-[900px]"
+                    className=" rounded-lg w-full h-full"
                   />
                 </div>
               </Dialog.Panel>

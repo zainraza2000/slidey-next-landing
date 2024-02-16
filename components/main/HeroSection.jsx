@@ -9,8 +9,11 @@ import ImageSecion from "@/components/shared/ImageHerosection";
 
 // IMAGES
 import heroSectionCardImg1 from "@/assets/images/herosection/herosection-card-1.png";
+import heroSectionModalImg1 from "@/assets/images/herosection/herosection-modal-1.png";
 import heroSectionCardImg2 from "@/assets/images/herosection/herosection-card-2.png";
+import heroSectionModalImg2 from "@/assets/images/herosection/herosection-modal-2.png";
 import heroSectionCardImg3 from "@/assets/images/herosection/herosection-card-3.png";
+import heroSectionModalImg3 from "@/assets/images/herosection/herosection-modal-3.png";
 import heroSectionCardImg4 from "@/assets/images/herosection/herosection-card-4.png";
 import heroSectionCardImg5 from "@/assets/images/herosection/herosection-card-5.png";
 import heroSectionCardImg6 from "@/assets/images/herosection/herosection-card-6.png";
@@ -127,6 +130,7 @@ const HeroSection = () => {
                 >
                   <ImageSecion
                     imgSrc={heroSectionCardImg1}
+                    modalSrc={heroSectionModalImg1}
                     setCurrentImg={setCurrentImg}
                     setOpen={setOpen}
                   />
@@ -142,6 +146,7 @@ const HeroSection = () => {
                 >
                   <ImageSecion
                     imgSrc={heroSectionCardImg2}
+                    modalSrc={heroSectionModalImg2}
                     setCurrentImg={setCurrentImg}
                     setOpen={setOpen}
                   />
@@ -158,6 +163,7 @@ const HeroSection = () => {
                 >
                   <ImageSecion
                     imgSrc={heroSectionCardImg3}
+                    modalSrc={heroSectionModalImg3}
                     setCurrentImg={setCurrentImg}
                     setOpen={setOpen}
                   />
@@ -178,6 +184,7 @@ const HeroSection = () => {
                 >
                   <ImageSecion
                     imgSrc={heroSectionCardImg4}
+                    modalSrc={heroSectionCardImg4}
                     setCurrentImg={setCurrentImg}
                     setOpen={setOpen}
                   />
@@ -193,6 +200,7 @@ const HeroSection = () => {
                 >
                   <ImageSecion
                     imgSrc={heroSectionCardImg5}
+                    modalSrc={heroSectionCardImg5}
                     setCurrentImg={setCurrentImg}
                     setOpen={setOpen}
                   />
@@ -209,6 +217,7 @@ const HeroSection = () => {
                 >
                   <ImageSecion
                     imgSrc={heroSectionCardImg6}
+                    modalSrc={heroSectionCardImg6}
                     setCurrentImg={setCurrentImg}
                     setOpen={setOpen}
                   />
@@ -228,6 +237,8 @@ const HeroSection = () => {
         setOpen={setOpen}
         open={open}
         cancelButtonRef={cancelButtonRef}
+        // customClass={'2xl:w-[90vw] 2xl:h-[90vh] xl:w-[95vw] xl:h-[90vh] md:w-[93vw] md:h-[92vh] w-[90vw] h-[36vh] md:mb-0 mb-auto md:rounded-[25px] rounded-lg '}
+        customClass={"2xl:w-[40vw] xl:w-[60vw] md:w-[70vw] rounded-lg"}
       />
     </>
   );
