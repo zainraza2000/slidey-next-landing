@@ -39,7 +39,7 @@ const ImageModal = ({ img, open, setOpen, cancelButtonRef, customClass }) => {
               <Dialog.Panel
                 className={`relative transform overflow-hidden  bg-white text-left shadow-xl transition-all ${customClass}`}
               >
-                <div class="relative p-0">
+                <div className="relative p-0">
                   <IoClose
                     className="absolute md:text-[35px] text-xl text-[#7A7A7A] right-3 top-4 cursor-pointer"
                     onClick={() => setOpen(false)}

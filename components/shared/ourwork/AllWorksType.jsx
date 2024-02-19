@@ -57,7 +57,7 @@ const AllWorksType = () => {
                   height={350}
                   alt="craftImg1"
                 />
-                <div class="allwork-hover-div">
+                <div className="allwork-hover-div">
                   <p className=" text-[22px] font-semibold">{item.title}</p>
                   <div className=" flex gap-2">
                     <Image src={workCardIcon1} alt="workCardIcon1" />
@@ -86,7 +86,7 @@ const AllWorksType = () => {
                   height={350}
                   alt="craftImg1"
                 />
-                <div class="allwork-hover-div">
+                <div className="allwork-hover-div">
                   <p className=" text-[22px] font-semibold">{item.title}</p>
                   <div className=" flex gap-2">
                     <Image src={workCardIcon1} alt="workCardIcon1" />
@@ -115,7 +115,7 @@ const AllWorksType = () => {
                   height={350}
                   alt="craftImg1"
                 />
-                <div class="allwork-hover-div">
+                <div className="allwork-hover-div">
                   <p className=" text-[20px] font-normal">{item.title}</p>
                   <div className=" flex gap-2">
                     <Image src={workCardIcon1} alt="workCardIcon1" />
@@ -144,7 +144,7 @@ const AllWorksType = () => {
                   height={350}
                   alt="craftImg1"
                 />
-                <div class="allwork-hover-div">
+                <div className="allwork-hover-div">
                   <p className=" text-[22px] font-semibold">{item.title}</p>
                   <div className=" flex gap-2">
                     <Image src={workCardIcon1} alt="workCardIcon1" />
@@ -173,7 +173,7 @@ const AllWorksType = () => {
                   height={350}
                   alt="craftImg1"
                 />
-                <div class="allwork-hover-div">
+                <div className="allwork-hover-div">
                   <p className=" text-[22px] font-semibold">{item.title}</p>
                   <div className=" flex gap-2">
                     <Image src={workCardIcon1} alt="workCardIcon1" />

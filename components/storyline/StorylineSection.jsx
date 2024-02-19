@@ -53,7 +53,7 @@ const StorylineSection = () => {
         </div>
       </div>
       {/* BOTTOM */}
-      <div class="grid 2xl:grid-cols-6 md:grid-cols-4 grid-cols-4 md:gap-4 gap-[6px] w-full xl:h-[310px] md:h-[230px]">
+      <div className="grid 2xl:grid-cols-6 md:grid-cols-4 grid-cols-4 md:gap-4 gap-[6px] w-full xl:h-[310px] md:h-[230px]">
         <div className="2xl:col-span-2 flex flex-col 2xl:gap-6 xl:gap-4 md:gap-2 bg-white  md:rounded-[30px] rounded-lg 2xl:p-8 md:p-5 py-2 px-2 xl:h-full md:h-[230px]">
           <h3 className="fontGivonic xl:text-[28px] md:text-[20px] text-xs text-[#F659DF] font-semibold">
             Branding Design

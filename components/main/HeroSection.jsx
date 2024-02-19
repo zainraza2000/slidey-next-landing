@@ -348,7 +348,7 @@ const HeroSection = () => {
         setOpen={setOpen}
         open={open}
         cancelButtonRef={cancelButtonRef}
-        customClass={"2xl:w-[40vw] xl:w-[60vw] md:w-[70vw] rounded-lg"}
+        customclassName={"2xl:w-[40vw] xl:w-[60vw] md:w-[70vw] rounded-lg"}
       />
     </>
   );

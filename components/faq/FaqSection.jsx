@@ -74,7 +74,7 @@ const FaqSection = () => {
         {/* ACCORDIANCE */}
         <div className="w-full flex flex-col gap-3 space-y-1 ">
           {FaqData.map((item, i) => (
-            <div className=" xl:py-7 md:py-4 py-[10px] md:px-10 px-4 bg-[#E0F7FF]  md:rounded-[20px] rounded-lg cursor-pointer"
+            <div key={i} className=" xl:py-7 md:py-4 py-[10px] md:px-10 px-4 bg-[#E0F7FF]  md:rounded-[20px] rounded-lg cursor-pointer"
             onClick={() => handleAccordionClick(i)}>
               <button
                 className={`flex w-full md:items-start items-center justify-between text-left transition-all duration-300 ease-in-out ${
