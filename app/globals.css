@@ -179,7 +179,7 @@ body {
 /* -------------------------------------- STORYLINE SECTION ----------------------------------- */
 
 .bg-storyline {
-  background-image: url("../assets/images/storyline-bg.jpg");
+  background-image: url("../assets/images/storyline-bg.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -192,7 +192,7 @@ body {
 /* -------------------------------------- TESTINOMIALS SECTION ----------------------------------- */
 
 .bg-testinomial {
-  background-image: url("../assets/images/testinomials/bg-testinomials.png");
+  background-image: url("../assets/images/testinomials/bg-testinomials.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
