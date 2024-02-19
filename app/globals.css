@@ -16,6 +16,7 @@ body {
   font-family: "Givonic";
   src: url("../assets/Givonic-Font/Givonic\ Variable.otf"),
     url("../assets/Givonic-Font/Givonic\ Variable.ttf") format("truetype");
+  font-display: swap;
 }
 
 .fontGivonic {
