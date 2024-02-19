@@ -7,13 +7,13 @@ export default function sitemap() {
       priority: 1,
     },
     {
-      url: "https://slidey.io/pitch-deck",
+      url: "https://slidey.io/pitchdeck",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://slidey.io/our-work",
+      url: "https://slidey.io/ourwork",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.5,
