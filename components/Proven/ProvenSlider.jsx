@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 
-import proven1 from "@/assets/images/proven/proven-1.png";
-import proven2 from "@/assets/images/proven/proven-2.png";
-import upwageLogo from "@/assets/images/proven/upwage-logo.png";
-import smartrydeLogo from "@/assets/images/proven/smartryde-logo.png";
+import proven1 from "@/assets/images/proven/proven-1.webp";
+import proven2 from "@/assets/images/proven/proven-2.webp";
+import upwageLogo from "@/assets/images/proven/upwage-logo.webp";
+import smartrydeLogo from "@/assets/images/proven/smartryde-logo.webp";
 import Image from "next/image";
 
 import Slider from "react-slick";

@@ -32,7 +32,7 @@ body {
 .bg-Vector {
   width: 100%;
   height: 100%;
-  background-image: url("../assets/images/Vector.png");
+  background-image: url("../assets/images/Vector.webp");
   background-size: contain; /* Cover the entire div with the background image */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat;
@@ -55,15 +55,12 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.hoverScaleEffect:hover {
-}
-
 /* -------------------------------------- IDEA SECTION ----------------------------------- */
 
 .bg-idea {
   /* width: 100%; */
   /* height: 100%; */
-  background-image: url("../assets/images/ideasection.png");
+  background-image: url("../assets/images/ideasection.webp");
   background-size: contain; /* Cover the entire div with the background image */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat;
@@ -98,19 +95,19 @@ body {
 /* -------------------------------------- Ranking SECTION ----------------------------------- */
 
 .bg-ranking-1 {
-  background-image: url("../assets/images/ranking1.png");
+  background-image: url("../assets/images/ranking1.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .bg-ranking-2 {
-  background-image: url("../assets/images/ranking2.png");
+  background-image: url("../assets/images/ranking2.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .bg-ranking-3 {
-  background-image: url("../assets/images/ranking3.png");
+  background-image: url("../assets/images/ranking3.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
