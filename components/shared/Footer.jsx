@@ -12,8 +12,10 @@ import topDesignImg from "@/assets/images/shared/topdesign.png";
 import clutchImg from "@/assets/images/shared/clutch.png";
 import trustPilotImg from "@/assets/images/shared/trustpilot.png";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
   const scrollToAbout = () => {
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   };
@@ -25,13 +27,23 @@ const Footer = () => {
             <p className=" xl:text-[40px] md:text-3xl text-lg xl:leading-snug md:leading-10 font-semibold text-[#fff] tracking-wider mb-0">
               Create Your Story With Us!
             </p>
-            <button
-              className=" xl:text-[22px] md:text-[18px] text-sm md:font-semibold font-medium text-[#090909] bg-[#86E2FF] md:rounded-[15px] rounded-lg py-3 xl:px-6 md:px-4 md:tracking-wider tracking-normal
+            {pathname === "/pitchdeck" ? (
+              <button
+                className=" xl:text-[22px] md:text-[18px] text-sm md:font-semibold font-medium text-[#090909] bg-[#86E2FF] md:rounded-[15px] rounded-lg py-3 xl:px-6 md:px-4 md:tracking-wider tracking-normal
             transition-all duration-300 ease-in-out transform-gpu hover:scale-105"
-              onClick={scrollToAbout}
-            >
-              Claim Your Free Slide
-            </button>
+                onClick={scrollToAbout}
+              >
+                Claim Your Free Slide
+              </button>
+            ) : (
+              <Link
+                href={"/contactus"}
+                className=" xl:text-[22px] md:text-[18px] text-sm md:font-semibold font-medium text-[#090909] bg-[#86E2FF] md:rounded-[15px] rounded-lg py-3 xl:px-6 md:px-4 md:tracking-wider tracking-normal text-center
+            transition-all duration-300 ease-in-out transform-gpu hover:scale-105"
+              >
+                Claim Your Free Slide
+              </Link>
+            )}
           </div>
           <div className=" flex md:col-span-2">
             <div className=" flex-1 flex flex-col md:gap-6 gap-2 capitalize">
