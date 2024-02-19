@@ -22,6 +22,8 @@ import exploreImg from "@/assets/images/explore-img.png";
 import bdDownImg from "@/assets/images/bg-down-4.png";
 import mainBg from "@/assets/images/Vector.png";
 import ImageModal from "../shared/ImageModal";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -50,6 +52,7 @@ const cardsVariants = {
 };
 
 const HeroSection = () => {
+  const pathname = usePathname();
   const [currentCards, setCurrentCards] = useState(1);
   const scrollToAbout = () => {
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
@@ -83,13 +86,23 @@ const HeroSection = () => {
               <p className=" xl:text-base md:text-[15px] text-[8px] font-normal text-[#959595] tracking-wider text-justify">
                 Transforming Presentations into Powerful Narratives!
               </p>
-              <button
-                className=" 2xl:text-[22px] xl:text-[18px] md:text-[16px] text-[10px] md:font-semibold font-medium text-[#090909] bg-[#86e2ff] rounded-[50px] md:py-3 md:px-6 py-2 px-2 md:tracking-wider tracking-normal
+              {pathname === "/pitchdeck" ? (
+                <button
+                  className=" 2xl:text-[22px] xl:text-[18px] md:text-[16px] text-[10px] md:font-semibold font-medium text-[#090909] bg-[#86e2ff] rounded-[50px] md:py-3 md:px-6 py-2 px-2 md:tracking-wider tracking-normal
               transition-all duration-300 ease-in-out transform-gpu hover:scale-105"
-                onClick={scrollToAbout}
-              >
-                Claim Your Free Slide
-              </button>
+                  onClick={scrollToAbout}
+                >
+                  Claim Your Free Slide
+                </button>
+              ) : (
+                <Link
+                  href={"/contactus"}
+                  className=" 2xl:text-[22px] xl:text-[18px] md:text-[16px] text-[10px] md:font-semibold font-medium text-[#090909] bg-[#86e2ff] rounded-[50px] md:py-3 md:px-6 py-2 px-2 md:tracking-wider tracking-normal text-center
+              transition-all duration-300 ease-in-out transform-gpu hover:scale-105"
+                >
+                  Claim Your Free Slide
+                </Link>
+              )}
             </div>
           </div>
           <div className=" flex justify-between 2xl:mt-20 xl:mt-14 md:mt-6 mt-4">
@@ -232,6 +245,7 @@ const HeroSection = () => {
               </>
             )}
           </motion.ul>
+          {/* MOBILE */}
           <ul className=" relative md:hidden flex justify-center  xl:w-[860px] md:w-full mx-auto transition-transform transform">
             {currentCards === 1 && (
               <>
@@ -334,7 +348,6 @@ const HeroSection = () => {
         setOpen={setOpen}
         open={open}
         cancelButtonRef={cancelButtonRef}
-        // customClass={'2xl:w-[90vw] 2xl:h-[90vh] xl:w-[95vw] xl:h-[90vh] md:w-[93vw] md:h-[92vh] w-[90vw] h-[36vh] md:mb-0 mb-auto md:rounded-[25px] rounded-lg '}
         customClass={"2xl:w-[40vw] xl:w-[60vw] md:w-[70vw] rounded-lg"}
       />
     </>

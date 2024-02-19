@@ -43,6 +43,17 @@ s0.parentNode.insertBefore(s1,s0);
             `,
           }}
         />
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `
+            document.body.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName.toLowerCase() === 'img') {
+        e.preventDefault();
+    }
+});
+            `,
+          }}
+        />
       </body>
     </html>
   );
