@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import footerImg from "@/assets/images/footer-img.png";
+import footerImg from "@/assets/images/footer-img.webp";
 import { RiInstagramLine, RiLinkedinFill } from "react-icons/ri";
 import { BiBasketball } from "react-icons/bi";
 import { FaPinterestP } from "react-icons/fa";
