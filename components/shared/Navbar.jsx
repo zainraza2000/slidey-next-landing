@@ -16,7 +16,7 @@ const Navbar = ({ logo, scrollToAbout }) => {
           className=" md:w-[124px] md:h-[40%] w-16 h-5"
         />
       </Link>
-      <ul
+      <div
         className={` flex ${
           pathname === "/pitchdeck"
             ? "md:items-end items-center "
@@ -60,7 +60,7 @@ const Navbar = ({ logo, scrollToAbout }) => {
             Contact Us
           </Link>
         )}
-      </ul>
+      </div>
     </nav>
   );
 };

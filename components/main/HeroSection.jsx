@@ -107,17 +107,17 @@ const HeroSection = () => {
           </div>
           <div className=" flex justify-between 2xl:mt-20 xl:mt-14 md:mt-6 mt-4">
             <div className=" flex flex-col 2xl:gap-3 md:gap-1 gap-0">
-              <h3 className="  2xl:text-5xl md:text-[32px] text-[13px] font-semibold">
+              <h2 className="  2xl:text-5xl md:text-[32px] text-[13px] font-semibold">
                 5K+
-              </h3>
+              </h2>
               <p className=" fontGivonic 2xl:text-base md:text-sm text-[7px] text-[#959595]">
                 Aesthetic Wonders Created
               </p>
             </div>
             <div className=" flex flex-col 2xl:gap-3 md:gap-1 gap-0">
-              <h3 className="  2xl:text-5xl md:text-[32px] text-[13px] font-semibold">
+              <h2 className="  2xl:text-5xl md:text-[32px] text-[13px] font-semibold">
                 $200M
-              </h3>
+              </h2>
               <p className=" fontGivonic 2xl:text-base md:text-sm text-[7px] text-[#959595] text-end md:tracking-[10px] tracking-[3px] md:-mr-2 -mr-1">
                 RAISED
               </p>

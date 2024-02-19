@@ -45,7 +45,7 @@ const TestimonialCard = ({ item, isBlur,style }) => {
       <div className=" flex justify-between items-center">
         <div className=" flex md:gap-3 gap-1 items-center">
           <p className=" text-[#4D4D4D] xl:text-base md:text-xs text-[6px]">Read More</p>
-          <Image src={arrow} width={10} height={10} className=" md:w-auto md:h-auto w-[5px] h-[5px]" />
+          <Image src={arrow} alt="arrow" width={10} height={10} className=" md:w-auto md:h-auto w-[5px] h-[5px]" />
         </div>
         <Image
           src={item.companyLogo}

@@ -93,6 +93,7 @@ const Footer = () => {
                 href={"https://www.instagram.com/slideyllc/"}
                 target="_blank"
                 className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
+                aria-label="instagram"
               >
                 <RiInstagramLine className=" text-[26px]" />
               </Link>
@@ -100,6 +101,7 @@ const Footer = () => {
                 href={"https://www.pinterest.com/slideyllc/"}
                 target="_blank"
                 className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
+                aria-label="pinterest"
               >
                 <FaPinterestP className=" text-[26px]" />
               </Link>
@@ -107,6 +109,7 @@ const Footer = () => {
                 href={"https://www.linkedin.com/company/slideyllc/"}
                 target="_blank"
                 className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
+                aria-label="linkedin"
               >
                 <RiLinkedinFill className=" text-[26px]" />
               </Link>
