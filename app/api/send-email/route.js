@@ -36,7 +36,7 @@ export const POST = async (req, res) => {
 
         const mailOptions = {
           from: "muhammaddaniyal@slidey.io",
-          to: "ahmed@slidey.io",
+          to: "bilal@slidey.io",
           subject: "Form Submission",
           text: "Form data submitted:",
           attachments: [

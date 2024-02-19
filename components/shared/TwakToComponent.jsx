@@ -4,7 +4,7 @@ const TwakToComponent = () => {
   return (
     <TawkMessengerReact
       propertyId="65c626538d261e1b5f5e519f"
-      widgetId="1hm70be2k"
+      widgetId="1hn0gae73"
     />
   );
 };

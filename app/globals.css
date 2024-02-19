@@ -18,11 +18,9 @@ body {
     url("../assets/Givonic-Font/Givonic\ Variable.ttf") format("truetype");
 }
 
-
 .fontGivonic {
   font-family: "Givonic", sans-serif;
 }
-
 
 .bg-frame {
   background-image: url("../assets/images/bg-frame.png");
@@ -121,17 +119,13 @@ body {
 @media only screen and (max-width: 720px) {
   .bg-ranking-1 {
     background-size: cover;
-    
   }
   .bg-ranking-2 {
     background-size: cover;
-    
   }
   .bg-ranking-3 {
     background-size: cover;
-    
   }
-
 }
 
 /* -------------------------------------- Proven SECTION ----------------------------------- */
@@ -141,11 +135,11 @@ body {
   /* margin-left: 50px !important; */
 }
 
-.slick-arrow .slick-prev{
-display: none !important;
+.slick-arrow .slick-prev {
+  display: none !important;
 }
-.slick-arrow .slick-next{
-display: none !important;
+.slick-arrow .slick-next {
+  display: none !important;
 }
 
 .slick-dots {
@@ -224,19 +218,19 @@ display: none !important;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 1);
 }
 
-.pricingCard-1{
+.pricingCard-1 {
   background-image: url("../assets/images/pricing/price-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.pricingCard-2{
+.pricingCard-2 {
   background-image: url("../assets/images/pricing/price-4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.pricingCard-3{
+.pricingCard-3 {
   background-image: url("../assets/images/pricing/price-3.png");
   background-size: cover;
   background-position: center;
@@ -244,16 +238,15 @@ display: none !important;
 }
 
 @media only screen and (max-width: 1100px) {
-  .pricingCard-1{
+  .pricingCard-1 {
     background-size: cover;
   }
-  .pricingCard-2{
+  .pricingCard-2 {
     background-size: cover;
   }
-  .pricingCard-3{
+  .pricingCard-3 {
     background-size: cover;
   }
-  
 }
 
 /* -------------------------------------- CraftSection SECTION ----------------------------------- */
@@ -330,6 +323,15 @@ display: none !important;
   padding: 0px 32px;
 }
 
+@media only screen and (max-width: 720px) {
+  .ourWorkTypeCard:hover .hover-div {
+    display: none;
+  }
+  .ourWorkTypeCard:hover .allwork-hover-div {
+    display: none;
+  }
+}
+
 /* -------------------------------------- CONTACTUS PAGE ----------------------------------- */
 
 .bgContactUs {
@@ -389,5 +391,4 @@ display: none !important;
   .ourWorkTabHeadingActive {
     border-bottom: 2px solid #00c3ff;
   }
-  
 }

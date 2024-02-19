@@ -110,11 +110,12 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
+          {/* DESKTOP */}
           <motion.ul
             variants={container}
             initial="hidden"
             animate="visible"
-            className=" relative flex justify-center  xl:w-[860px] md:w-full mx-auto transition-transform transform"
+            className=" relative md:flex hidden justify-center  xl:w-[860px] md:w-full mx-auto transition-transform transform"
           >
             {currentCards === 1 && (
               <>
@@ -231,11 +232,101 @@ const HeroSection = () => {
               </>
             )}
           </motion.ul>
+          <ul className=" relative md:hidden flex justify-center  xl:w-[860px] md:w-full mx-auto transition-transform transform">
+            {currentCards === 1 && (
+              <>
+                <li
+                  className="absolute 
+                  ml:top-5 ml:left-16 ml:w-[80px] ml:h-[110px]
+                  top-5 left-10 w-[80px] h-[110px]
+                  md:rounded-[30px] rounded-[12px] -z-10 -rotate-12 transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                  style={{ rotate: "-2deg" }}
+                >
+                  <ImageSecion
+                    imgSrc={heroSectionCardImg1}
+                    modalSrc={heroSectionModalImg1}
+                    setCurrentImg={setCurrentImg}
+                    setOpen={setOpen}
+                  />
+                </li>
+                <li
+                  className="absolute 
+                  top-1  w-[90px] h-[130px] 
+                   md:rounded-[30px] rounded-[12px] transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                >
+                  <ImageSecion
+                    imgSrc={heroSectionCardImg2}
+                    modalSrc={heroSectionModalImg2}
+                    setCurrentImg={setCurrentImg}
+                    setOpen={setOpen}
+                  />
+                </li>
+                <li
+                  className="absolute 
+                  ml:top-5 ml:right-16 ml:w-[80px] ml:h-[110px]
+                  top-5 right-10 w-[80px] h-[110px]
+                  md:rounded-[30px] rounded-[12px]  transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                  style={{ rotate: "10deg" }}
+                >
+                  <ImageSecion
+                    imgSrc={heroSectionCardImg3}
+                    modalSrc={heroSectionModalImg3}
+                    setCurrentImg={setCurrentImg}
+                    setOpen={setOpen}
+                  />
+                </li>
+              </>
+            )}
+            {currentCards === 2 && (
+              <>
+                <li
+                  className="absolute 
+                  ml:top-5 ml:left-16 ml:w-[80px] ml:h-[110px]
+                  top-5 left-10 w-[80px] h-[110px]
+                  md:rounded-[30px] rounded-[12px] -z-10 -rotate-12 transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                  style={{ rotate: "-2deg" }}
+                >
+                  <ImageSecion
+                    imgSrc={heroSectionCardImg4}
+                    modalSrc={heroSectionCardImg4}
+                    setCurrentImg={setCurrentImg}
+                    setOpen={setOpen}
+                  />
+                </li>
+                <li
+                  className="absolute 
+                  top-1  w-[90px] h-[130px] 
+                   md:rounded-[30px] rounded-[12px] transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                >
+                  <ImageSecion
+                    imgSrc={heroSectionCardImg5}
+                    modalSrc={heroSectionCardImg5}
+                    setCurrentImg={setCurrentImg}
+                    setOpen={setOpen}
+                  />
+                </li>
+                <li
+                  className="absolute 
+                  ml:top-5 ml:right-16 ml:w-[80px] ml:h-[110px]
+                  top-5 right-10 w-[80px] h-[110px]
+                  md:rounded-[30px] rounded-[12px]  transition-all duration-300 ease-in-out transform-gpu hover:scale-110 cursor-pointer"
+                  style={{ rotate: "10deg" }}
+                >
+                  <ImageSecion
+                    imgSrc={heroSectionCardImg6}
+                    modalSrc={heroSectionCardImg6}
+                    setCurrentImg={setCurrentImg}
+                    setOpen={setOpen}
+                  />
+                </li>
+              </>
+            )}
+          </ul>
         </div>
       </div>
       <Image
         src={bdDownImg}
-        className=" relative md:block w-full z-[2000] 3xl:-mt-[160px] 2xl:-mt-[152px] xl:-mt-[112px] md:-mt-[102px] -mt-[460px] 3xl:px-[0px] 2xl:px-[0px] xl:px-[44px] md:px-0"
+        className=" relative md:block w-full z-[2000] 3xl:-mt-[160px] 2xl:-mt-[152px] xl:-mt-[112px] md:-mt-[102px] -mt-[462px] 3xl:px-[0px] 2xl:px-[0px] xl:px-[44px] md:px-0"
         alt="bdDownImg"
       />
       <ImageModal
