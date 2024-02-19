@@ -67,6 +67,7 @@ const HeroSection = () => {
       <div className="relative flex justify-center 2xl:h-[950px] xl:h-[650px] md:h-[630px] h-[720px] w-full 2xl:pt-11 xl:pt-8 md:pt-6 pt-4 2xl:px-20 xl:px-16 md:px-8 px-6">
         <Image
           src={mainBg}
+          loading="lazy"
           alt="main bg"
           className=" absolute 2xl:w-[90%]  md:w-[93%] w-[90%] md:h-[96%] h-[40%]  mx-auto "
         />
