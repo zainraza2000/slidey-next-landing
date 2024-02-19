@@ -6,6 +6,19 @@ import contactTabletImg from "@/assets/images/contactus/contactus-img.png";
 import { usePathname } from "next/navigation";
 import axios from "axios";
 
+const callContactUsApi = async (backendFormData) => {
+  const res = await axios.post(
+    `http://localhost:3000/api/send-email`,
+    backendFormData,
+    {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    }
+  );
+  return res;
+};
+
 const ContactUsSection = () => {
   const pathname = usePathname();
 
@@ -45,16 +58,7 @@ const ContactUsSection = () => {
     }
 
     try {
-      console.log(formData);
-      const res = await axios.post(
-        `http://localhost:3000/api/send-email`,
-        backendFormData,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        }
-      );
+      const res = await callContactUsApi(backendFormData);
       console.log(res);
     } catch (error) {
       console.error("Error sending email:", error);
