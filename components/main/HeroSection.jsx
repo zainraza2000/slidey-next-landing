@@ -121,7 +121,8 @@ const HeroSection = () => {
                 <motion.li
                   variants={cardsVariants}
                   className="absolute 
-                  2xl:top-[120px] 2xl:hover:top-[110px] 2xl:left-20 2xl:hover:left-16 bg-lime-700 2xl:w-[270px] 2xl:h-[390px]
+                  3xl:top-[120px] 3xl:hover:top-[110px] 3xl:left-20 3xl:hover:left-16 bg-lime-700 3xl:w-[270px] 3xl:h-[390px]
+                  2xl:top-[40px] 2xl:hover:top-[50px] 2xl:left-20 2xl:hover:left-16 2xl:w-[270px] 2xl:h-[400px]
                   xl:-top-5 xl:left-[120px] xl:hover:left-28 xl:w-[235px] xl:h-[340px]
                   md:top-[30px] md:left-36 md:hover:left-32 md:w-[190px] md:h-[270px]
                   top-5 left-9 w-[80px] h-[110px]
@@ -138,7 +139,8 @@ const HeroSection = () => {
                 <motion.li
                   variants={cardsVariants}
                   className="absolute 
-                  2xl:top-12 2xl:hover:top-[38px] bg-orange-400 2xl:w-[310px] 2xl:h-[470px] 2xl:hover:w-[320px] 2xl:hover:h-[480px]
+                  3xl:top-12 3xl:hover:top-[38px] bg-orange-400 3xl:w-[310px] 3xl:h-[470px] 3xl:hover:w-[320px] 3xl:hover:h-[480px]
+                  2xl:-top-2 2xl:hover:-top-3 2xl:w-[300px] 2xl:h-[440px] 2xl:hover:w-[310px] 2xl:hover:h-[450px]
                   xl:-top-[60px] xl:hover:-top-[65px] xl:w-[270px] xl:h-[350px] xl:hover:w-[280px] xl:hover:h-[360px]
                   md:-top-1 md:hover:-top-2 md:w-[220px] md:h-[300px] md:hover:w-[230px] md:hover:h-[310px]
                   top-1  w-[90px] h-[130px] 
@@ -154,7 +156,8 @@ const HeroSection = () => {
                 <motion.li
                   variants={cardsVariants}
                   className="absolute 
-                  2xl:top-[120px] 2xl:hover:top-[105px] 2xl:right-12 2xl:hover:right-10 bg-stone-600 2xl:w-[280px] 2xl:h-[420px]  2xl:hover:h-[435px]
+                  3xl:top-[120px] 3xl:hover:top-[105px] 3xl:right-12 3xl:hover:right-10 bg-stone-600 3xl:w-[280px] 3xl:h-[420px]  3xl:hover:h-[435px]
+                  2xl:top-[40px] 2xl:hover:top-[50px] 2xl:right-14 2xl:hover:right-12 2xl:w-[280px] 2xl:h-[420px]  2xl:hover:h-[430px]
                   xl:-top-5 xl:hover:-top-6 xl:right-24 xl:hover:right-[90px] xl:w-[240px] xl:h-[350px] xl:hover:h-[360px]
                   md:top-[30px] md:hover:top-7 md:right-36 md:hover:right-32  md:w-[190px] md:h-[270px] 
                   top-5 right-9 w-[80px] h-[110px]
@@ -175,7 +178,8 @@ const HeroSection = () => {
                 <motion.li
                   variants={cardsVariants}
                   className="absolute 
-                  2xl:top-[120px] 2xl:hover:top-[110px] 2xl:left-20 2xl:hover:left-16 bg-lime-700 2xl:w-[270px] 2xl:h-[390px]
+                  3xl:top-[120px] 3xl:hover:top-[110px] 3xl:left-20 3xl:hover:left-16 bg-lime-700 3xl:w-[270px] 3xl:h-[390px]
+                  2xl:top-[40px] 2xl:hover:top-[50px] 2xl:left-20 2xl:hover:left-16 2xl:w-[270px] 2xl:h-[400px]
                   xl:-top-5 xl:left-[120px] xl:hover:left-28 xl:w-[235px] xl:h-[340px]
                   md:top-[30px] md:left-36 md:hover:left-32 md:w-[190px] md:h-[270px]
                   top-5 left-9 w-[80px] h-[110px]
@@ -192,7 +196,8 @@ const HeroSection = () => {
                 <motion.li
                   variants={cardsVariants}
                   className="absolute 
-                  2xl:top-12 2xl:hover:top-[38px] bg-orange-400 2xl:w-[310px] 2xl:h-[470px] 2xl:hover:w-[320px] 2xl:hover:h-[480px]
+                  3xl:top-12 3xl:hover:top-[38px] bg-orange-400 3xl:w-[310px] 3xl:h-[470px] 3xl:hover:w-[320px] 3xl:hover:h-[480px]
+                  2xl:-top-2 2xl:hover:-top-3 2xl:w-[300px] 2xl:h-[440px] 2xl:hover:w-[310px] 2xl:hover:h-[450px]
                   xl:-top-[60px] xl:hover:-top-[65px] xl:w-[270px] xl:h-[350px] xl:hover:w-[280px] xl:hover:h-[360px]
                   md:-top-1 md:hover:-top-2 md:w-[220px] md:h-[300px] md:hover:w-[230px] md:hover:h-[310px]
                   top-1  w-[90px] h-[130px] 
@@ -208,7 +213,8 @@ const HeroSection = () => {
                 <motion.li
                   variants={cardsVariants}
                   className="absolute 
-                  2xl:top-[120px] 2xl:hover:top-[105px] 2xl:right-12 2xl:hover:right-10 bg-stone-600 2xl:w-[280px] 2xl:h-[420px]  2xl:hover:h-[435px]
+                  3xl:top-[120px] 3xl:hover:top-[105px] 3xl:right-12 3xl:hover:right-10 bg-stone-600 3xl:w-[280px] 3xl:h-[420px]  3xl:hover:h-[435px]
+                  2xl:top-[40px] 2xl:hover:top-[50px] 2xl:right-14 2xl:hover:right-12 2xl:w-[280px] 2xl:h-[420px]  2xl:hover:h-[430px]
                   xl:-top-5 xl:hover:-top-6 xl:right-24 xl:hover:right-[90px] xl:w-[240px] xl:h-[350px] xl:hover:h-[360px]
                   md:top-[30px] md:hover:top-7 md:right-36 md:hover:right-32  md:w-[190px] md:h-[270px] 
                   top-5 right-9 w-[80px] h-[110px]
@@ -229,7 +235,7 @@ const HeroSection = () => {
       </div>
       <Image
         src={bdDownImg}
-        className=" relative md:block w-full z-[2000] 2xl:-mt-[160px] xl:-mt-[112px] md:-mt-[102px] -mt-[460px] 2xl:px-[82px] xl:px-[46px] md:px-0"
+        className=" relative md:block w-full z-[2000] 3xl:-mt-[160px] 2xl:-mt-[152px] xl:-mt-[112px] md:-mt-[102px] -mt-[460px] 3xl:px-[0px] 2xl:px-[0px] xl:px-[44px] md:px-0"
         alt="bdDownImg"
       />
       <ImageModal
