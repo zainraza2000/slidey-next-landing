@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { useRef, useState } from "react";
-import { motion, useAnimation, useMotionValue } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 import Image from "next/image";
 import idea1 from "@/assets/svgs/idea-1.svg";
 import idea2 from "@/assets/svgs/idea-2.svg";

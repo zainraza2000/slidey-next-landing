@@ -53,14 +53,14 @@ import craftImg6 from "@/assets/images/craft/craft-img-6.png";
 import craftImg6b from "@/assets/images/craft/craft-img-6b.png";
 
 // CLIENT
-import clientProfile1 from "@/assets/images/testinomials/client-1.png";
-import client1Company from "@/assets/images/testinomials/client-1-company.png";
-import clientProfile2 from "@/assets/images/testinomials/client-2.png";
-import client2Company from "@/assets/images/testinomials/client-2-company.png";
-import clientProfile3 from "@/assets/images/testinomials/client-3.png";
-import client3Company from "@/assets/images/testinomials/client-3-company.png";
-import clientProfile4 from "@/assets/images/testinomials/client-4.png";
-import client4Company from "@/assets/images/testinomials/client-4-company.png";
+import clientProfile1 from "@/assets/images/testinomials/client-1.webp";
+import client1Company from "@/assets/images/testinomials/client-1-company.webp";
+import clientProfile2 from "@/assets/images/testinomials/client-2.webp";
+import client2Company from "@/assets/images/testinomials/client-2-company.webp";
+import clientProfile3 from "@/assets/images/testinomials/client-3.webp";
+import client3Company from "@/assets/images/testinomials/client-3-company.webp";
+import clientProfile4 from "@/assets/images/testinomials/client-4.webp";
+import client4Company from "@/assets/images/testinomials/client-4-company.webp";
 
 export const craftData = [
   {

@@ -13,7 +13,7 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
-      url: "https://slidey.io/ourwork",
+      url: "https://slidey.io/our-work",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.5,

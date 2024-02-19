@@ -2,8 +2,8 @@ import Image from "next/image";
 import React from "react";
 
 import arrow from "@/assets/images/testinomials/testinomial-arrow.svg";
-import lineUp from "@/assets/images/testinomials/line-up.png";
-import lineDown from "@/assets/images/testinomials/line-down.png";
+import lineUp from "@/assets/images/testinomials/line-up.webp";
+import lineDown from "@/assets/images/testinomials/line-down.webp";
 
 const TestimonialCard = ({ item, isBlur,style }) => {
   return (

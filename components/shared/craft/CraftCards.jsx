@@ -22,7 +22,7 @@ const CraftCards = ({craftData,setCurrentImg,setOpen}) => {
                   alt="craftImg1"
                   className=" xl:w-[350px] xl:h-[350px] md:w-[320px] md:h-[240px]"
                 />
-                <div class="hover-div md:flex hidden">
+                <div className="hover-div md:flex hidden">
                   <p className="text-[22px] font-semibold">{item.title}</p>
                   <div className=" flex gap-2">
                     <Image src={workCardIcon1} alt="workCardIcon1" />

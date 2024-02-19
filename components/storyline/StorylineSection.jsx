@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import presentationImg from "@/assets/images/storyline/presentation.png";
-import pitchdeckImg from "@/assets/images/storyline/pitchdeck.png";
-import brandingImg from "@/assets/images/storyline/branding.png";
-import websitedesignImg from "@/assets/images/storyline/websitedesign.png";
+import presentationImg from "@/assets/images/storyline/presentation.webp";
+import pitchdeckImg from "@/assets/images/storyline/pitchdeck.webp";
+import brandingImg from "@/assets/images/storyline/branding.webp";
+import websitedesignImg from "@/assets/images/storyline/websitedesign.webp";
 
 const StorylineSection = () => {
   return (

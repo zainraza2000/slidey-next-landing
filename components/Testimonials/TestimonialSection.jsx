@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import nextArrow from "@/assets/images/testinomials/testinomial-arrow.png";
+import nextArrow from "@/assets/images/testinomials/testinomial-arrow.webp";
 import TestimonialCard from "./TestimonialCard";
 import { clientData } from "@/data";
 
@@ -29,7 +29,7 @@ const TestimonialSection = () => {
     return () => {
       window.removeEventListener("transitionend", handleTransitionEnd);
     };
-  }, []);
+  }, [transitioning]);
 
   return (
     <section className=" relative bg-testinomial xl:w-4/5 md:w-[85%] w-[90%] flex flex-col justify-between items-center md:gap-8 xl:gap-8 gap-4 mx-auto md:pt-24 md:pb-14 pt-12 pb-7">
