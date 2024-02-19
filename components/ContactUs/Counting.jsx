@@ -6,9 +6,9 @@ import { CountUp } from 'use-count-up'
 
 const Counting = () => {
   return (
-    <div className=" w-[80%] flex justify-around items-center rounded-xl py-14 px-10 bg-[#F8F8F8] mx-auto mt-24">
-      <div className=" flex flex-col gap-3">
-        <h3 className="fontGivonic text-[62px] font-bold leading-[60px] uppercase">
+    <div className=" md:w-[80%] w-[90%] flex justify-around items-center rounded-xl md:py-14 py-6 md:px-10 px-2 bg-[#F8F8F8] mx-auto md:mt-24 mt-12">
+      <div className=" flex flex-col md:gap-3 gap-[6px]">
+        <h3 className="fontGivonic md:text-[62px] text-sm font-bold md:leading-[60px] leading-none uppercase">
           <CountUp
             isCounting
             easing="easeOutCubic"
@@ -18,12 +18,12 @@ const Counting = () => {
           />{" "}
           <span>+</span>
         </h3>
-        <p className=" fontGivonic text-2xl font-medium capitalize">
+        <p className=" fontGivonic md:text-2xl text-[10px] font-medium capitalize">
           Project Delivered
         </p>
       </div>
-      <div className=" flex flex-col gap-3">
-        <h3 className="fontGivonic text-[62px] font-bold leading-[60px] uppercase">
+      <div className=" flex flex-col md:gap-3 gap-[6px]">
+        <h3 className="fontGivonic md:text-[62px] text-sm  font-bold md:leading-[60px] leading-none uppercase">
           <CountUp
             isCounting
             easing="easeOutCubic"
@@ -33,10 +33,10 @@ const Counting = () => {
           />{" "}
           <span>+</span>
         </h3>
-        <p className=" fontGivonic text-2xl font-medium capitalize">Clients</p>
+        <p className=" fontGivonic md:text-2xl text-[10px] font-medium capitalize">Clients</p>
       </div>
-      <div className=" flex flex-col gap-3">
-        <h3 className="fontGivonic text-[62px] font-bold leading-[60px] uppercase">
+      <div className=" flex flex-col md:gap-3 gap-[6px]">
+        <h3 className="fontGivonic md:text-[62px] text-sm  font-bold md:leading-[60px] leading-none uppercase">
           <CountUp
             isCounting
             easing="easeOutCubic"
@@ -46,12 +46,12 @@ const Counting = () => {
           />{" "}
           <span>%</span>
         </h3>
-        <p className=" fontGivonic text-2xl font-medium capitalize">
+        <p className=" fontGivonic md:text-2xl text-[10px] font-medium capitalize">
           Retention Rate
         </p>
       </div>
-      <div className=" flex flex-col gap-3">
-        <h3 className="fontGivonic text-[62px] font-bold leading-[60px] capitalize">
+      <div className=" flex flex-col md:gap-3 gap-[6px]">
+        <h3 className="fontGivonic md:text-[62px] text-sm  font-bold md:leading-[60px] leading-none capitalize">
           <CountUp
             isCounting
             easing="easeOutCubic"
@@ -61,7 +61,7 @@ const Counting = () => {
           />{" "}
           <span>+ Years</span>
         </h3>
-        <p className=" fontGivonic text-2xl font-medium capitalize">Served</p>
+        <p className=" fontGivonic md:text-2xl text-[10px] font-medium capitalize">Served</p>
       </div>
     </div>
   );
