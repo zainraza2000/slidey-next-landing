@@ -54,8 +54,8 @@ const Footer = () => {
               </h3>
               <div className=" flex justify-start items-center gap-2">
                 <TbMail className=" md:text-[28px] text-base text-[#9F9F9F]" />
-                <p className="md:text-sm text-xs text-[#9F9F9F]">
-                  info@slideyllc.com
+                <p className="md:text-sm text-xs text-[#9F9F9F] lowercase">
+                  info@slidey.io
                 </p>
               </div>
               <div className=" flex justify-start items-center gap-2">
@@ -78,28 +78,25 @@ const Footer = () => {
             <h3 className=" text-lg text-[#fff] mb-0">Find Us On</h3>
             <div className=" flex items-center gap-5">
               <Link
-                href={"/"}
+                href={"https://www.instagram.com/slideyllc/"}
+                target="_blank"
                 className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
               >
                 <RiInstagramLine className=" text-[26px]" />
               </Link>
               <Link
-                href={"/"}
+                href={"https://www.pinterest.com/slideyllc/"}
+                target="_blank"
                 className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
               >
                 <FaPinterestP className=" text-[26px]" />
               </Link>
               <Link
-                href={"/"}
+                href={"https://www.linkedin.com/company/slideyllc/"}
+                target="_blank"
                 className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
               >
                 <RiLinkedinFill className=" text-[26px]" />
-              </Link>
-              <Link
-                href={"/"}
-                className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
-              >
-                <BiBasketball className=" text-[26px]" />
               </Link>
             </div>
           </div>

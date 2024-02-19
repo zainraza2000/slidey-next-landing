@@ -9,11 +9,13 @@ const Navbar = ({ logo, scrollToAbout }) => {
   const pathname = usePathname();
   return (
     <nav className=" flex justify-between items-center">
-      <Image
-        src={logo}
-        alt="logo"
-        className=" md:w-[124px] md:h-[40%] w-16 h-5"
-      />
+      <Link href={pathname === "/pitchdeck" ? "/pitchdeck" : "/"}>
+        <Image
+          src={logo}
+          alt="logo"
+          className=" md:w-[124px] md:h-[40%] w-16 h-5"
+        />
+      </Link>
       <ul
         className={` flex ${
           pathname === "/pitchdeck"
@@ -22,7 +24,10 @@ const Navbar = ({ logo, scrollToAbout }) => {
         } md:gap-10 gap-3 text-base font-normal`}
       >
         {pathname === "/pitchdeck" ? (
-          <Link href={"https://www.trustpilot.com/review/slideyllc.com"}>
+          <Link
+            href={"https://www.trustpilot.com/review/slideyllc.com"}
+            target="_blank"
+          >
             <Image
               src={trustPilotImage}
               alt="trustPilotImage"

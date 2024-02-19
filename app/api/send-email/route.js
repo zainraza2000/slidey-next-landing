@@ -1,12 +1,6 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
 export const POST = async (req, res) => {
   if (req.method === "POST") {
     try {
