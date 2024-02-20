@@ -63,8 +63,8 @@ const CraftSection = () => {
           {/* Cards*/}
           {pathname === "/pitchdeck" ? (
             <>
-              <CraftSliderLTR setCurrentImg={setCurrentImg} setOpen={setOpen} />
-              <CraftSliderRTL setCurrentImg={setCurrentImg} setOpen={setOpen} />
+              <CraftSliderLTR setCurrentImg={setCurrentImg} setOpen={setOpen} open={open} />
+              <CraftSliderRTL setCurrentImg={setCurrentImg} setOpen={setOpen} open={open} />
             </>
           ) : (
             <OurWorkCards

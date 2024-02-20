@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useEffect, useRef } from "react";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,7 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { craftData } from "@/data";
 import CraftCards from "./CraftCards";
 
-const CraftSliderLTR = ({ setCurrentImg, setOpen }) => {
+const CraftSliderLTR = ({ setCurrentImg, setOpen,open }) => {
+  let sliderRef = useRef(null);
   const settings = {
     infinite: true,
     slidesToShow: 3,
@@ -15,8 +17,8 @@ const CraftSliderLTR = ({ setCurrentImg, setOpen }) => {
     dots: false,
     pauseOnHover: true,
     autoplay: true,
-    // speed: 5000,
-    autoplaySpeed: 2800,
+    speed: 5000,
+    autoplaySpeed: 2500,
     swipeToSlide: true,
     className: "center",
     cssEase: "linear",
@@ -35,8 +37,13 @@ const CraftSliderLTR = ({ setCurrentImg, setOpen }) => {
       },
     ],
   };
+  useEffect(() => {
+    console.log(open);
+    open ? sliderRef.slickPause() : sliderRef.slickPlay();
+    console.log(settings);
+  }, [open]);
   return (
-    <Slider {...settings} className="">
+    <Slider ref={(slider) => (sliderRef = slider)} {...settings} className="">
       {craftData?.map(
         (item, i) =>
           item.type === 1 && (
