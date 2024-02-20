@@ -51,6 +51,12 @@ import craftImg5 from "@/assets/images/craft/craft-img-5.png";
 import craftImg5b from "@/assets/images/craft/craft-img-5b.png";
 import craftImg6 from "@/assets/images/craft/craft-img-6.png";
 import craftImg6b from "@/assets/images/craft/craft-img-6b.png";
+import craftImg7 from "@/assets/images/craft/craft-img-7.png";
+import craftImg7b from "@/assets/images/craft/craft-img-7b.png";
+import craftImg8 from "@/assets/images/craft/craft-img-8.png";
+import craftImg8b from "@/assets/images/craft/craft-img-8b.png";
+import craftImg9 from "@/assets/images/craft/craft-img-9.png";
+import craftImg9b from "@/assets/images/craft/craft-img-9b.png";
 
 // CLIENT
 import clientProfile1 from "@/assets/images/testinomials/client-1.webp";
@@ -67,31 +73,55 @@ export const craftData = [
     title: "Karbonx",
     thumbnailSrc: craftImg1,
     modalSrc: craftImg1b,
+    type: 1,
   },
   {
     title: "Shepherd",
     thumbnailSrc: craftImg2,
     modalSrc: craftImg2b,
+    type: 1,
   },
   {
     title: "Writer",
     thumbnailSrc: craftImg3,
     modalSrc: craftImg3b,
+    type: 1,
   },
   {
     title: "Gamr",
     thumbnailSrc: craftImg4,
     modalSrc: craftImg4b,
+    type: 1,
   },
   {
     title: "The Floorr",
     thumbnailSrc: craftImg5,
     modalSrc: craftImg5b,
+    type: 1,
   },
   {
     title: "Native Voice",
     thumbnailSrc: craftImg6,
     modalSrc: craftImg6b,
+    type: 2,
+  },
+  {
+    title: "Burble",
+    thumbnailSrc: craftImg7,
+    modalSrc: craftImg7b,
+    type: 2,
+  },
+  {
+    title: "Ballers App",
+    thumbnailSrc: craftImg8,
+    modalSrc: craftImg8b,
+    type: 2,
+  },
+  {
+    title: "Super Path",
+    thumbnailSrc: craftImg9,
+    modalSrc: craftImg9b,
+    type: 2,
   },
 ];
 

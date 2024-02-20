@@ -14,6 +14,8 @@ import OurWorkCards from "../shared/ourwork/OurWorkCards";
 
 // DATA
 import { craftData, ourWorksData } from "@/data";
+import CraftSliderLTR from "../shared/craft/CraftSliderLTR";
+import CraftSliderRTL from "../shared/craft/CraftSliderRTL";
 
 const workTypes = [
   "All",
@@ -60,11 +62,10 @@ const CraftSection = () => {
           </div>
           {/* Cards*/}
           {pathname === "/pitchdeck" ? (
-            <CraftCards
-              craftData={craftData}
-              setCurrentImg={setCurrentImg}
-              setOpen={setOpen}
-            />
+            <>
+              <CraftSliderLTR setCurrentImg={setCurrentImg} setOpen={setOpen} />
+              <CraftSliderRTL setCurrentImg={setCurrentImg} setOpen={setOpen} />
+            </>
           ) : (
             <OurWorkCards
               workTypes={workTypes}

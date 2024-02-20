@@ -18,14 +18,12 @@ export default function Home() {
       <TwakToComponent />
       <HeroSection />
       <IdeaSection />
-      <ContactUsSection />
       <ClientSection />
       <RankingSection />
       <StorylineSection />
       <ProvenSection />
       <CraftSection />
       <TestimonialSection />
-      <PricingSection />
       <FaqSection />
       <Footer />
     </>

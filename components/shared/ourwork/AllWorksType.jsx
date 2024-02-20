@@ -17,10 +17,12 @@ const AllWorksType = () => {
     slidesToScroll: 1,
     arrows: false,
     dots: false,
-    pauseOnHover: false,
+    pauseOnHover: true,
     autoplay: true,
-    speed: 8000,
-    autoplaySpeed: 2000,
+    // speed: 5000,
+    autoplaySpeed: 3000,
+    swipeToSlide: true,
+    className: "center",
     cssEase: "linear",
     responsive: [
       {
@@ -49,13 +51,14 @@ const AllWorksType = () => {
             item.type === 1 && (
               <div
                 key={i}
-                className="slide ourWorkTypeCard relative mx-auto cursor-pointer px-2"
+                className="slide ourWorkTypeCard relative mx-auto cursor-pointer"
               >
                 <Image
                   src={item.thumbnailSrc}
                   width={350}
                   height={350}
                   alt="craftImg1"
+                  className="ourWorkTypeCard"
                 />
                 <div className="allwork-hover-div">
                   <p className=" text-[22px] font-semibold">{item.title}</p>
@@ -78,7 +81,7 @@ const AllWorksType = () => {
             item.type === 2 && (
               <div
                 key={i}
-                className="slide ourWorkTypeCard relative mx-auto cursor-pointer px-2"
+                className="slide ourWorkTypeCard relative mx-auto cursor-pointer"
               >
                 <Image
                   src={item.thumbnailSrc}
@@ -107,7 +110,7 @@ const AllWorksType = () => {
             item.type === 3 && (
               <div
                 key={i}
-                className="slide ourWorkTypeCard relative mx-auto cursor-pointer px-2"
+                className="slide ourWorkTypeCard relative mx-auto cursor-pointer"
               >
                 <Image
                   src={item.thumbnailSrc}
@@ -136,7 +139,7 @@ const AllWorksType = () => {
             item.type === 4 && (
               <div
                 key={i}
-                className="slide ourWorkTypeCard relative mx-auto cursor-pointer px-2"
+                className="slide ourWorkTypeCard relative mx-auto cursor-pointer"
               >
                 <Image
                   src={item.thumbnailSrc}
@@ -165,7 +168,7 @@ const AllWorksType = () => {
             item.type === 5 && (
               <div
                 key={i}
-                className="slide ourWorkTypeCard relative mx-auto cursor-pointer px-2"
+                className="slide ourWorkTypeCard relative mx-auto cursor-pointer"
               >
                 <Image
                   src={item.thumbnailSrc}

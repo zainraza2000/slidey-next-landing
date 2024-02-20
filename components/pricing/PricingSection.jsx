@@ -1,21 +1,16 @@
 "use client";
 import { pricingData } from "@/data";
-import { usePathname } from "next/navigation";
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 
 const PricingSection = () => {
-  const pathname = usePathname();
   const scrollToAbout = () => {
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   };
   return (
     <section
-      className={`${
-        pathname === "/pitchdeck"
-          ? "bg-pricing xl:w-4/5 md:w-[90%] w-full md:px-0 px-5 flex flex-col justify-between md:gap-5 xl:gap-8 mx-auto md:py-14 py-7"
-          : "hidden"
-      } `}
+      className={` "bg-pricing xl:w-4/5 md:w-[90%] w-full md:px-0 px-5 flex flex-col justify-between md:gap-5 xl:gap-8 mx-auto md:py-14 py-7"
+         `}
     >
       <h3 className="fontGivonic xl:text-[52px] md:text-[36px] text-base font-semibold xl:leading-[60px] md:leading-[50px] xl:ml-0 md:ml-8 capitalize w-fit">
         pricing

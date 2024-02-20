@@ -64,24 +64,31 @@ const Footer = () => {
               <h3 className=" md:text-lg text-base text-[#fff] mb-0">
                 About Slidey
               </h3>
-              <div className=" flex justify-start items-center gap-2">
+              <Link href={`mailto:info@slidey.io`} className=" flex justify-start items-center gap-2">
                 <TbMail className=" md:text-[28px] text-base text-[#9F9F9F]" />
                 <p className="md:text-sm text-xs text-[#9F9F9F] lowercase">
                   info@slidey.io
                 </p>
-              </div>
-              <div className=" flex justify-start items-center gap-2">
+              </Link>
+              <Link
+                href={`tel:+1(786)785-2112`}
+                className=" flex justify-start items-center gap-2"
+              >
                 <HiOutlinePhone className=" md:text-[28px] text-base text-[#9F9F9F]" />
                 <p className="md:text-sm text-xs text-[#9F9F9F]">
                   +1(786)785-2112
                 </p>
-              </div>
-              <div className=" flex justify-start items-center gap-2">
+              </Link>
+              <Link
+                href={"https://maps.app.goo.gl/9b9zkVBgZ6Xb3oMm6"}
+                target="_blank"
+                className=" flex justify-start items-center gap-2"
+              >
                 <SlLocationPin className=" md:text-[36px] text-4xl text-[#9F9F9F]" />
                 <p className="md:text-sm text-xs text-[#9F9F9F]">
                   1036 US Highway 1 #324 North Palm Beach, FL 33408
                 </p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -89,14 +96,6 @@ const Footer = () => {
           <div className="flex flex-col justify-center md:gap-8 gap-4">
             <h3 className=" text-lg text-[#fff] mb-0">Find Us On</h3>
             <div className=" flex items-center gap-5">
-              <Link
-                href={"https://www.instagram.com/slideyllc/"}
-                target="_blank"
-                className=" bg-[#86E2FF] rounded-[50%] py-[10px] px-3 transition-all duration-300 ease-in-out transform-gpu hover:scale-110"
-                aria-label="instagram"
-              >
-                <RiInstagramLine className=" text-[26px]" />
-              </Link>
               <Link
                 href={"https://www.pinterest.com/slideyllc/"}
                 target="_blank"
@@ -121,22 +120,29 @@ const Footer = () => {
               width={105}
               height={99}
               alt="topDesignImg"
-              className=" xl:w-[105px] xl:h-[99px] md:w-[80px] md:h-[70px] w-16"
+              className="  md:w-[80px] md:h-[70px] w-16"
             />
-            <Image
-              src={clutchImg}
-              width={135}
-              height={39}
-              alt="clutchImg"
-              className=" xl:w-[135px] xl:h-[39px] md:w-[90px] md:h-[20px] w-16"
-            />
-            <Image
-              src={trustPilotImg}
-              width={172}
-              height={82}
-              alt="trustPilotImg"
-              className=" xl:w-[172px] xl:h-[82px] md:w-[120px] md:h-[50px] w-20"
-            />
+            <Link href={"https://clutch.co/profile/slidey"} target="_blank">
+              <Image
+                src={clutchImg}
+                width={135}
+                height={39}
+                alt="clutchImg"
+                className=" xl:h-[25px] md:w-[90px] md:h-[20px] w-16"
+              />
+            </Link>
+            <Link
+              href={"https://www.trustpilot.com/review/slideyllc.com"}
+              target="_blank"
+            >
+              <Image
+                src={trustPilotImg}
+                width={172}
+                height={82}
+                alt="trustPilotImg"
+                className="  md:w-[120px] md:h-[50px] w-20"
+              />
+            </Link>
           </div>
         </div>
         <Image

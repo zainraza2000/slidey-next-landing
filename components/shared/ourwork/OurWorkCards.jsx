@@ -49,7 +49,7 @@ const OurWorkCards = ({
         {selectedWorkType === 0 ? (
           <AllWorksType />
         ) : (
-          <div className=" grid grid-cols-3 md:gap-5 xl:gap-8 gap-3 md:px-0 px-2">
+          <div className=" grid grid-cols-3 md:gap-5 xl:gap-8 gap-3 md:px-0">
             {currentWorkType?.map((item, i) => (
               <div
                 key={i}
