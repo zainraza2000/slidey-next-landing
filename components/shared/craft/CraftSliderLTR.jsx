@@ -17,7 +17,7 @@ const CraftSliderLTR = ({ setCurrentImg, setOpen,open }) => {
     dots: false,
     pauseOnHover: true,
     autoplay: true,
-    speed: 5000,
+    // speed: 5000,
     autoplaySpeed: 2500,
     swipeToSlide: true,
     className: "center",
