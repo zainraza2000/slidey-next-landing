@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {children}
 
-        <Script
+        {/* <Script
           id="tawk"
           dangerouslySetInnerHTML={{
             __html: `
@@ -46,7 +46,7 @@ s0.parentNode.insertBefore(s1,s0);
 })();
             `,
           }}
-        />
+        /> */}
         <Script
           dangerouslySetInnerHTML={{
             __html: `
@@ -55,6 +55,14 @@ s0.parentNode.insertBefore(s1,s0);
         e.preventDefault();
     }
 });
+            `,
+          }}
+        />
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `
+            !function(w,d){function e(e,n){w.ServiceBell.q=w.ServiceBell.q||[],w.ServiceBell.q.push([e,n])}if(!w.ServiceBell){var i=function(n){for(var i=arguments.length,r=new Array(i>1?i-1:0),c=1;c<i;c++)r[c-1]=arguments[c];e(n,r)};["init","identify","dial","alert","bookMeeting","hide","show","expand","collapse","connect","disconnect"].forEach((function(r){i[r]=function(){for(var i=arguments.length,r=new Array(i),c=0;c<i;c++)r[c]=arguments[c];e(n,r)}})),w.ServiceBell=i}var s=d.createElement("script");s.id="service-bell-script",s.src="https://cdn.servicebell.com/main.js",s.async=1;var r=d.getElementsByTagName("script")[0];r.parentNode.insertBefore(s,r)}(window,document);
+  ServiceBell("init", "5c049e39eec940bc88ef817d0e654a0b", { mode: "iframe-jit" });
             `,
           }}
         />
