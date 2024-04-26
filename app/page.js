@@ -10,12 +10,12 @@ import TestimonialSection from "@/components/Testimonials/TestimonialSection";
 import ClientSection from "@/components/client/ClientSection";
 import PricingSection from "@/components/pricing/PricingSection";
 import ContactUsSection from "@/components/ContactUs/ContactUsSection";
-import TwakToComponent from "@/components/shared/TwakToComponent";
+// import TwakToComponent from "@/components/shared/TwakToComponent";
 
 export default function Home() {
   return (
     <>
-      <TwakToComponent />
+      {/* <TwakToComponent /> */}
       <HeroSection />
       <IdeaSection />
       <ClientSection />
