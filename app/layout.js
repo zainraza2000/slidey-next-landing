@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Slidey.io",
-  description: "Designing Decks, Pitch Perfectly!",
+  description: "Your Design Partner!",
 };
 
 export default function RootLayout({ children }) {
