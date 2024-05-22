@@ -81,7 +81,7 @@ const HeroSection = () => {
           <Navbar logo={slideyLogo} scrollToAbout={scrollToAbout} />
           <div className=" fontGivonic flex justify-between 2xl:mt-20 xl:mt-14 md:mt-10 mt-4">
             <h1 className=" md:w-[40%] w-[50%] 2xl:text-6xl xl:text-[30px] md:text-[24px] text-sm font-semibold md:tracking-wider tracking-normal 2xl:leading-tight xl:leading-snug md:leading-tight">
-              Designing Decks, Pitch Perfectly!
+              Your Design Partner!
             </h1>
             <div className=" 2xl:w-[25%] xl:w-[27%] md:w-[35%] w-[48%] flex flex-col md:gap-3 gap-2">
               <p className=" xl:text-base md:text-[15px] text-[8px] font-normal text-[#959595] tracking-wider text-justify">
