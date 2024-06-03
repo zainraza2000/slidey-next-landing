@@ -390,3 +390,12 @@ body {
   }
 }
 
+/* VIDEO SECTION */
+
+.video-play-button {
+  background: rgba(134, 226, 255, 0.65);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: 1px solid rgba(134, 226, 255, 0.23);
+}

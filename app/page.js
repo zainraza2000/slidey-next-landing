@@ -8,18 +8,16 @@ import RankingSection from "@/components/ranking/RankingSection";
 import StorylineSection from "@/components/storyline/StorylineSection";
 import TestimonialSection from "@/components/Testimonials/TestimonialSection";
 import ClientSection from "@/components/client/ClientSection";
-import PricingSection from "@/components/pricing/PricingSection";
-import ContactUsSection from "@/components/ContactUs/ContactUsSection";
-// import TwakToComponent from "@/components/shared/TwakToComponent";
+import VideoSection from "@/components/video/VideoSection";
 
 export default function Home() {
   return (
     <>
-      {/* <TwakToComponent /> */}
       <HeroSection />
       <IdeaSection />
       <ClientSection />
       <RankingSection />
+      <VideoSection />
       <StorylineSection />
       <ProvenSection />
       <CraftSection />
